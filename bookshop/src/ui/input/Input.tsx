@@ -4,7 +4,7 @@ type InputProps = {
   value?: string;
   onChange: React.ChangeEventHandler<HTMLInputElement> | undefined;
   type: string;
-  label: string;
+  label?: string;
   className?: string;
 };
 
