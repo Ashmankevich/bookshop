@@ -15,8 +15,8 @@ export const Template: React.FC<ContentTemplateProps> = ({ children }) => {
     <div className={style.wrapper}>
       <Header></Header>
       <div>{children}</div>
-      <Subscribe children={undefined}></Subscribe>
-      <Footer children={undefined}></Footer>
+      <Subscribe></Subscribe>
+      <Footer></Footer>
     </div>
   );
 };

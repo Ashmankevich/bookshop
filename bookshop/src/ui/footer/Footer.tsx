@@ -1,13 +1,10 @@
 import style from "./Footer.module.css";
 
-type FooterProps = {
-  children: React.ReactNode;
-  className?: string;
-};
-
-export const Footer: React.FC<FooterProps> = ({
-  children,
-  className = " ",
-}) => {
-  return <h1 className={`${style.title} ${className}`}>{children}</h1>;
+export const Footer: React.FC = () => {
+  return (
+    <div className={style.wrapper}>
+      <p className={style.text}>©2022 Bookstore</p>
+      <p className={style.text}>All rights reserved</p>
+    </div>
+  );
 };

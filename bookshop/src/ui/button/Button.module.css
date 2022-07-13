@@ -1,21 +1,19 @@
 .button {
-   background-color: var(--btn-background-color);
-   border-radius: 50px;
+   margin: 0 auto;
+   font-size: 24px;
+   font-weight: 700;
+   letter-spacing: 0.05em;
+   text-transform: uppercase;
    color: white;
+   background-color: #313037;
+   transition: 0.3s linear;
    border: none;
-   padding: 15px 10px;
-   font-size: 20px;
-   width: 250px;
-}
-
-.button:hover {
-   color: #fff;
-   background-color: #ab4949;
+   width: 100%;
    cursor: pointer;
 }
 
-.button:active {
-   box-shadow: 0px 0px 10px 0px #ab4949 inset;
-   color: #fff;
-   background-color: #ec7979;
+.button:hover,
+:active {
+   background-color: #5b5a62;
+   box-shadow: 4px 4px 30px #5b5a62;
 }

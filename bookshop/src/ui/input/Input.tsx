@@ -6,6 +6,7 @@ type InputProps = {
   type: string;
   label?: string;
   className?: string;
+  placeholder?: string;
 };
 
 export const Input: React.FC<InputProps> = ({
@@ -14,12 +15,14 @@ export const Input: React.FC<InputProps> = ({
   label,
   type,
   className = "",
+  placeholder,
 }) => {
   return (
     <label className={style.label}>
       {label}
       <input
         className={`${style.input} ${className}`}
+        placeholder={placeholder}
         type={type}
         value={value}
         onChange={onChange}

@@ -1,0 +1,43 @@
+.block {
+   background-color: #f4eefd;
+   padding: 40px 80px 0 80px;
+}
+
+.form {
+   display: flex;
+   margin-bottom: 60px;
+}
+
+.input {
+   width: 720px;
+   margin-bottom: 60px;
+}
+
+.title {
+   color: #313037;
+   text-transform: uppercase;
+   margin-bottom: 5px;
+}
+
+.text {
+   color: #a8a8a8;
+   font-size: 18px;
+   font-weight: 600;
+   letter-spacing: 0.04em;
+   margin: 0 0 30px 0;
+}
+
+.button {
+   height: 58px;
+   margin-top: 10px;
+}
+
+.button:hover,
+:active {
+   background-color: none;
+   box-shadow: none;
+}
+
+.container {
+   border-bottom: 1px solid #e7e7e7;
+}
