@@ -24,7 +24,7 @@ function App() {
           ></Route>
         </Routes>
         <Routes>
-          <Route path={AppPages.HOME} element={<Home></Home>}></Route>
+          <Route index element={<Home></Home>}></Route>
         </Routes>
         <Routes>
           <Route

@@ -22,7 +22,6 @@ export const Subscribe: React.FC = () => {
           <Button className={style.button}>SUBSCRIBE</Button>
         </form>
       </div>
-      <div className={style.container}></div>
     </div>
   );
 };

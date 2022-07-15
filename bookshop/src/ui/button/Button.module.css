@@ -8,8 +8,8 @@
    background-color: #313037;
    transition: 0.3s linear;
    border: none;
-   width: 100%;
    cursor: pointer;
+   padding: 14px 0;
 }
 
 .button:hover,

@@ -28,6 +28,7 @@ export const Header: React.FC = () => {
         className={style.form}
       >
         <Input
+          className={style.input}
           type="text"
           placeholder="Search"
           value={search}

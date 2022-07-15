@@ -30,14 +30,11 @@
 .button {
    height: 58px;
    margin-top: 10px;
+   width: 280px;
 }
 
 .button:hover,
 :active {
    background-color: none;
    box-shadow: none;
-}
-
-.container {
-   border-bottom: 1px solid #e7e7e7;
 }
