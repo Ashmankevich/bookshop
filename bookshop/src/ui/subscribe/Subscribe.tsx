@@ -1,5 +1,5 @@
 import style from "./Subscribe.module.css";
-import { Button } from "../../ui/button/Button";
+import { ButtonPrimary } from "../button/button-primary/ButtonPrimary";
 import { Input } from "../../ui/input/Input";
 import { Title } from "../title/Title";
 
@@ -19,7 +19,7 @@ export const Subscribe: React.FC = () => {
             placeholder="Your email"
             onChange={undefined}
           ></Input>
-          <Button className={style.button}>SUBSCRIBE</Button>
+          <ButtonPrimary className={style.button}>SUBSCRIBE</ButtonPrimary>
         </form>
       </div>
     </div>

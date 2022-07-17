@@ -8,7 +8,7 @@ import {
   UserIcon,
 } from "../../assets";
 import { AppPages } from "../../types";
-import { Button } from "../../ui/button/Button";
+import { ButtonPrimary } from "../../ui/button/button-primary/ButtonPrimary";
 import { Input } from "../../ui/input/Input";
 import style from "./Header.module.css";
 
@@ -34,9 +34,9 @@ export const Header: React.FC = () => {
           value={search}
           onChange={(event) => setSearch(event.target.value)}
         ></Input>
-        <Button type="submit" className={style.button}>
+        <ButtonPrimary type="submit" className={style.button}>
           <SearchIcon></SearchIcon>
-        </Button>
+        </ButtonPrimary>
       </form>
       <nav className={style.nav}>
         <Link to={AppPages.FAVOURITE_BOOKS}>

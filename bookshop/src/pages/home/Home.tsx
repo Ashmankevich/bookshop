@@ -4,9 +4,9 @@ import { Template } from "../../template/Template";
 import { Subscribe } from "../../ui/subscribe/Subscribe";
 import { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
-import { getBooks } from "../../store/selectors/bookSelectors";
+import { getBooks } from "../../store/selectors";
 import { fetchBook } from "../../store/slices/bookSlice";
-import { BookListPage } from "../../features/books/book-list/BookListPage";
+import { BookList } from "../../ui/books/book-list/BookList";
 
 type HomeProps = {};
 
@@ -20,7 +20,7 @@ export const Home: React.FC<HomeProps> = () => {
     <div className={style.wrapper}>
       <Template>
         <Title className={style.title}>New Stuff</Title>
-        <BookListPage books={books}></BookListPage>
+        <BookList books={books}></BookList>
         <Subscribe></Subscribe>
       </Template>
     </div>

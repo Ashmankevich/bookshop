@@ -23,3 +23,10 @@ export type BookApi = {
   total: string;
   result: any;
 };
+
+export type User = {
+  isSignIn: boolean;
+  email: string | undefined;
+  name: string | undefined;
+  password: string | undefined;
+};

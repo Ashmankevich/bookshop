@@ -1,11 +1,11 @@
-import style from "./BookItemPage.module.css";
+import style from "./BookItem.module.css";
 import { NewBookApi } from "../../../api/types";
 
 type BookItemProps = {
   book: NewBookApi;
 };
 
-export const BookItemPage: React.FC<BookItemProps> = ({ book }) => {
+export const BookItem: React.FC<BookItemProps> = ({ book }) => {
   return (
     <div className={style.wrapper} key={book.isbn13}>
       <div className={style.link}>

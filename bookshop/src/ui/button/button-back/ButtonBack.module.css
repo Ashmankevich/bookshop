@@ -1,0 +1,12 @@
+.button {
+   margin: 77px 0 37px 0;
+   font-size: 24px;
+   font-weight: 700;
+   letter-spacing: 0.05em;
+   text-transform: uppercase;
+   transition: 0.3s linear;
+   border: none;
+   cursor: pointer;
+   padding: 14px 0;
+   background-color: white;
+}

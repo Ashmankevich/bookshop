@@ -1,4 +1,4 @@
-import style from "./Button.module.css";
+import style from "./ButtonPrimary.module.css";
 
 type ButtonProps = {
   children: React.ReactNode;
@@ -8,7 +8,7 @@ type ButtonProps = {
   role?: string;
 };
 
-export const Button: React.FC<ButtonProps> = ({
+export const ButtonPrimary: React.FC<ButtonProps> = ({
   children,
   className = "",
   type = "button",

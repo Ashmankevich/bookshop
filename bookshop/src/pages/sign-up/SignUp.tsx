@@ -1,6 +1,6 @@
 import style from "./SignUp.module.css";
 import { Template } from "../../template/Template";
-import { Button } from "../../ui/button/Button";
+import { ButtonPrimary } from "../../ui/button/button-primary/ButtonPrimary";
 import { Input } from "../../ui/input/Input";
 import { Link } from "react-router-dom";
 import { AppPages } from "../../types";
@@ -48,9 +48,9 @@ export const SignUp: React.FC<SignUpProps> = () => {
             type="text"
             placeholder="Confirm your password"
           ></Input>
-          <Button className={style.button} type="submit">
+          <ButtonPrimary className={style.button} type="submit">
             sign up
-          </Button>
+          </ButtonPrimary>
         </form>
       </Template>
     </div>
