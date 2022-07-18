@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useForm } from "react-hook-form";
+import { Link, useNavigate } from "react-router-dom";
 import {
   LikeIcon,
   LogoIcon,
@@ -13,7 +13,12 @@ import { Input } from "../../ui/input/Input";
 import style from "./Header.module.css";
 
 export const Header: React.FC = () => {
-  const [search, setSearch] = useState("");
+  const { register, handleSubmit } = useForm();
+  const navigate = useNavigate();
+
+  const onSubmit = (data: any) => {
+    navigate(`/bookshop/search/${data.title}/1`);
+  };
   return (
     <header className={style.wrapper}>
       <div className={style.logo}>
@@ -21,18 +26,12 @@ export const Header: React.FC = () => {
           <LogoIcon></LogoIcon>
         </Link>
       </div>
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-        }}
-        className={style.form}
-      >
+      <form onSubmit={handleSubmit(onSubmit)} className={style.form}>
         <Input
           className={style.input}
           type="text"
           placeholder="Search"
-          value={search}
-          onChange={(event) => setSearch(event.target.value)}
+          {...register("title")}
         ></Input>
         <ButtonPrimary type="submit" className={style.button}>
           <SearchIcon></SearchIcon>

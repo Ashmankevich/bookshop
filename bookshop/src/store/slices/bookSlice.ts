@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { bookApi } from "../../api/bookApi";
 import { NewBooksApi } from "../../api/types";
-import { BookApi } from "../types";
+import { BookApi, BooksApiResult, keyWords } from "../types";
 
 const initialState: BookApi = {
   books: [],
@@ -36,6 +36,14 @@ export const fetchBook = createAsyncThunk<NewBooksApi>(
   }
 );
 
+export const fetchSearchBooks = createAsyncThunk<BooksApiResult, keyWords>(
+  "books/fetchSearchBooks",
+  async ({ title, page }) => {
+    const resultBooks = await bookApi.searchBooks(title, page);
+    return resultBooks;
+  }
+);
+
 const bookSlice = createSlice({
   name: "book",
   initialState,
@@ -54,6 +62,19 @@ const bookSlice = createSlice({
     builder.addCase(fetchBook.rejected, (state, { payload }) => {
       state.status = "error";
       state.error = payload;
+    });
+    builder.addCase(fetchSearchBooks.pending, (state) => {
+      state.status = "loading";
+      state.error = null;
+    });
+    builder.addCase(fetchSearchBooks.fulfilled, (state, action) => {
+      state.books = action.payload.books;
+      state.status = "success";
+      state.total = action.payload.total;
+    });
+    builder.addCase(fetchSearchBooks.rejected, (state, action) => {
+      state.error = action.error;
+      state.status = "error";
     });
   },
 });

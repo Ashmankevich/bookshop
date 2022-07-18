@@ -12,3 +12,10 @@ export type NewBookApi = {
   title: string;
   url: string;
 };
+
+export type SearchBooksApi = {
+  books: NewBookApi[];
+  error: string;
+  total: string;
+  page: string;
+};

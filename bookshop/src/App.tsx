@@ -7,47 +7,21 @@ import { SelectedBook } from "./pages/selected-book/SelectedBook";
 import { SignIn } from "./pages/sign-in/SignIn";
 import { SignUp } from "./pages/sign-up/SignUp";
 import { ShoppingCart } from "./pages/shopping-cart/ShoppingCart";
-import { NotFound } from "./pages/not-found/NotFound";
+import { Search } from "./features/search/Search";
 
 function App() {
   return (
     <div className="app">
       <BrowserRouter>
         <Routes>
-          <Route path={AppPages.ACCOUNT} element={<Account></Account>}></Route>
-        </Routes>
-        <Routes>
-          <Route
-            path={AppPages.FAVOURITE_BOOKS}
-            element={<FavouriteBooks></FavouriteBooks>}
-          ></Route>
-        </Routes>
-        <Routes>
-          <Route index element={<Home></Home>}></Route>
-        </Routes>
-        <Routes>
-          <Route
-            path={AppPages.NOT_FOUND}
-            element={<NotFound></NotFound>}
-          ></Route>
-        </Routes>
-        <Routes>
-          <Route
-            path={AppPages.SELECTED_BOOK}
-            element={<SelectedBook></SelectedBook>}
-          ></Route>
-        </Routes>
-        <Routes>
-          <Route path={AppPages.SIGN_IN} element={<SignIn></SignIn>}></Route>
-        </Routes>
-        <Routes>
-          <Route path={AppPages.SIGN_UP} element={<SignUp></SignUp>}></Route>
-        </Routes>
-        <Routes>
-          <Route
-            path={AppPages.SHOPPING_CART}
-            element={<ShoppingCart></ShoppingCart>}
-          ></Route>
+          <Route index element={<Home />} />
+          <Route path={AppPages.ACCOUNT} element={<Account />} />
+          <Route path={AppPages.FAVOURITE_BOOKS} element={<FavouriteBooks />} />
+          <Route path={AppPages.SELECTED_BOOK} element={<SelectedBook />} />
+          <Route path={AppPages.SEARCH} element={<Search />} />
+          <Route path={AppPages.SIGN_IN} element={<SignIn />} />
+          <Route path={AppPages.SIGN_UP} element={<SignUp />} />
+          <Route path={AppPages.SHOPPING_CART} element={<ShoppingCart />} />
         </Routes>
       </BrowserRouter>
     </div>

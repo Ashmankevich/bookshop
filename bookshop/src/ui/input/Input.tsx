@@ -2,7 +2,7 @@ import style from "./Input.module.css";
 
 type InputProps = {
   value?: string;
-  onChange: React.ChangeEventHandler<HTMLInputElement> | undefined;
+  onChange?: React.ChangeEventHandler<HTMLInputElement> | undefined;
   type: string;
   label?: string;
   className?: string;

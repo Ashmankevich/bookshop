@@ -24,6 +24,18 @@ export type BookApi = {
   result: any;
 };
 
+export type BooksApiResult = {
+  error: any;
+  page: string;
+  total: string;
+  books: Book[];
+};
+
+export type keyWords = {
+  title: string;
+  page: string;
+};
+
 export type User = {
   isSignIn: boolean;
   email: string | undefined;
