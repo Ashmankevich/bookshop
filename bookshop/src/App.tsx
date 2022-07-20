@@ -8,6 +8,7 @@ import { SignIn } from "./pages/sign-in/SignIn";
 import { SignUp } from "./pages/sign-up/SignUp";
 import { ShoppingCart } from "./pages/shopping-cart/ShoppingCart";
 import { Search } from "./features/search/Search";
+import { DetailedBook } from "./pages/detailed-book/DetailedBook";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path={AppPages.ACCOUNT} element={<Account />} />
+          <Route path={AppPages.DETAILED_BOOK} element={<DetailedBook />} />
           <Route path={AppPages.FAVOURITE_BOOKS} element={<FavouriteBooks />} />
           <Route path={AppPages.SELECTED_BOOK} element={<SelectedBook />} />
           <Route path={AppPages.SEARCH} element={<Search />} />

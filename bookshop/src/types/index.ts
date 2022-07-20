@@ -1,5 +1,6 @@
 export enum AppPages {
   ACCOUNT = "/bookshop/account",
+  DETAILED_BOOK = "/bookshop/detailed-book/:id",
   FAVOURITE_BOOKS = "/bookshop/favourite-books",
   HOME = "/bookshop",
   SELECTED_BOOK = "/bookshop/selected-book",
