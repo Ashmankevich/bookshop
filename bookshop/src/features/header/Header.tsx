@@ -1,12 +1,6 @@
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
-import {
-  LikeIcon,
-  LogoIcon,
-  SearchIcon,
-  ShoppingIcon,
-  UserIcon,
-} from "../../assets";
+import { LogoIcon, SearchIcon, ShoppingIcon, UserIcon } from "../../assets";
 import { AppPages } from "../../types";
 import { ButtonPrimary } from "../../ui/button/button-primary/ButtonPrimary";
 import { Input } from "../../ui/input/Input";
@@ -38,9 +32,6 @@ export const Header: React.FC = () => {
         </ButtonPrimary>
       </form>
       <nav className={style.nav}>
-        <Link to={AppPages.FAVOURITE_BOOKS}>
-          <LikeIcon></LikeIcon>
-        </Link>
         <Link to={AppPages.SHOPPING_CART}>
           <ShoppingIcon></ShoppingIcon>
         </Link>

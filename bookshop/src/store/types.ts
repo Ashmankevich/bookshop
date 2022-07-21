@@ -42,3 +42,22 @@ export type User = {
   name: string | undefined;
   password: string | undefined;
 };
+
+export type Cart = {
+  cart: BookCartApi[];
+  total: number;
+};
+
+export type BookCartApi = {
+  image: string;
+  isbn13: string;
+  price: string;
+  subtitle: string;
+  title: string;
+  url: string;
+  year: string;
+  publisher: string;
+  rating: string;
+  authors: string;
+  amount: number;
+};

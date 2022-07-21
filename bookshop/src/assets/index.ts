@@ -1,17 +1,23 @@
 import { ReactComponent as BackIcon } from "./icons/back.svg";
-import { ReactComponent as LikeIcon } from "./icons/like.svg";
 import { ReactComponent as LogoIcon } from "./icons/logo.svg";
 import { ReactComponent as SearchIcon } from "./icons/search.svg";
 import { ReactComponent as UserIcon } from "./icons/user.svg";
 import { ReactComponent as ShoppingIcon } from "./icons/shopping.svg";
 import { ReactComponent as ArrowDownIcon } from "./icons/arrowDown.svg";
+import { ReactComponent as AddItemIcon } from "./icons/addItem.svg";
+import { ReactComponent as NotificationIcon } from "./icons/notification.svg";
+import { ReactComponent as RemoveIcon } from "./icons/remove.svg";
+import { ReactComponent as DeleteIcon } from "./icons/delete.svg";
 
 export {
+  AddItemIcon,
   ArrowDownIcon,
+  DeleteIcon,
+  NotificationIcon,
   BackIcon,
-  LikeIcon,
   LogoIcon,
   SearchIcon,
   UserIcon,
+  RemoveIcon,
   ShoppingIcon,
 };
