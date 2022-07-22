@@ -39,3 +39,13 @@
 .input {
    width: 544px;
 }
+
+.notificationContainer {
+   position: relative;
+}
+
+.pic {
+   position: absolute;
+   top: -13px;
+   right: 0px;
+}
