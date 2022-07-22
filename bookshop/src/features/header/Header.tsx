@@ -1,7 +1,6 @@
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import {
-  LogoIcon,
   NotificationIcon,
   SearchIcon,
   ShoppingIcon,
@@ -25,8 +24,8 @@ export const Header: React.FC = () => {
   return (
     <header className={style.wrapper}>
       <div className={style.logo}>
-        <Link to={AppPages.HOME}>
-          <LogoIcon></LogoIcon>
+        <Link to={AppPages.HOME} className={style.link}>
+          <p className={style.logoName}>bookshop</p>
         </Link>
       </div>
       <form onSubmit={handleSubmit(onSubmit)} className={style.form}>

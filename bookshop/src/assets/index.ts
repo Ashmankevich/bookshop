@@ -1,5 +1,4 @@
 import { ReactComponent as BackIcon } from "./icons/back.svg";
-import { ReactComponent as LogoIcon } from "./icons/logo.svg";
 import { ReactComponent as SearchIcon } from "./icons/search.svg";
 import { ReactComponent as UserIcon } from "./icons/user.svg";
 import { ReactComponent as ShoppingIcon } from "./icons/shopping.svg";
@@ -15,7 +14,6 @@ export {
   DeleteIcon,
   NotificationIcon,
   BackIcon,
-  LogoIcon,
   SearchIcon,
   UserIcon,
   RemoveIcon,
