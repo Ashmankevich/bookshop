@@ -17,7 +17,6 @@ export const Subscribe: React.FC = () => {
             className={style.input}
             type="text"
             placeholder="Your email"
-            onChange={undefined}
           ></Input>
           <ButtonPrimary className={style.button}>SUBSCRIBE</ButtonPrimary>
         </form>

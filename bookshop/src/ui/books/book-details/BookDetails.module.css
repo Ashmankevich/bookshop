@@ -68,32 +68,7 @@
    cursor: pointer;
 }
 
-.linkButton {
-   display: flex;
-   align-items: center;
-   text-decoration: none;
-   color: #313037;
-}
-
 .button {
    width: 100%;
    margin: 0 auto 20px;
-}
-
-.buttonPreview {
-   display: block;
-   text-align: center;
-   font-weight: 400;
-   font-size: 16px;
-   line-height: 24px;
-   color: #313037;
-   cursor: pointer;
-}
-
-.bookListDetails {
-   display: grid;
-   grid-template-columns: 150px 150px;
-   column-gap: 90px;
-   row-gap: 15px;
-   margin-bottom: 30px;
 }

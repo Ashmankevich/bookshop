@@ -12,14 +12,14 @@ export const BookItem: React.FC<BookItemProps> = ({ book }) => {
       <Link
         className={style.link}
         to={`/bookshop/detailed-book/${book.isbn13}`}
-      ></Link>
-
-      <img className={style.pic} src={book.image} alt={book.title} />
-      <h2 className={style.title}>{book.title}</h2>
-      <h3 className={style.subtitle}>{book.subtitle}</h3>
-      <div className={style.price}>
-        {book.price === "$0.00" ? "Not Available" : book.price}
-      </div>
+      >
+        <img className={style.pic} src={book.image} alt={book.title} />
+        <h2 className={style.title}>{book.title}</h2>
+        <h3 className={style.subtitle}>{book.subtitle}</h3>
+        <div className={style.price}>
+          {book.price === "$0.00" ? "Not Available" : book.price}
+        </div>
+      </Link>
     </div>
   );
 };
