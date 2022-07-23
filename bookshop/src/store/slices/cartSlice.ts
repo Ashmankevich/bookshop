@@ -1,6 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { GetBookDetailsApi } from "../../api/types";
-import { BookCartApi, Cart } from "../types";
+import { BookCartApi, Cart, GetBookDetailsApi } from "../types";
 
 const initialState: Cart = {
   cart: [],

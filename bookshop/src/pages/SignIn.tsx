@@ -1,5 +1,5 @@
-import { SignInForm } from "../../features/form/sign-in-form/SignInForm";
-import { Template } from "../../template/Template";
+import { SignInForm } from "../features/form/sign-in-form/SignInForm";
+import { Template } from "../template/Template";
 
 type SignInProps = {};
 

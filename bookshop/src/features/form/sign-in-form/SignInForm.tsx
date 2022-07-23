@@ -2,7 +2,7 @@ import style from "./SignInForm.module.css";
 import { ButtonPrimary } from "../../../ui/button/button-primary/ButtonPrimary";
 import { Input } from "../../../ui/input/Input";
 import { Link } from "react-router-dom";
-import { AppPages } from "../../../types";
+import { AppPages } from "../../../routes";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";

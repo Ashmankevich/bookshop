@@ -1,6 +1,6 @@
 import style from "./BookList.module.css";
-import { NewBookApi } from "../../../api/types";
 import { BookItem } from "../book-item/BookItem";
+import { NewBookApi } from "../../../store/types";
 
 type BookListProps = {
   books: NewBookApi[];

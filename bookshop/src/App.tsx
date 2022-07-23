@@ -1,14 +1,14 @@
 import React from "react";
 import { AppContext } from "./AppContext";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Account } from "./pages/account/Account";
-import { AppPages } from "./types";
-import { Home } from "./pages/home/Home";
-import { SignIn } from "./pages/sign-in/SignIn";
-import { SignUp } from "./pages/sign-up/SignUp";
-import { ShoppingCart } from "./pages/shopping-cart/ShoppingCart";
+import { Account } from "./pages/Account";
+import { AppPages } from "./routes";
+import { Home } from "./pages/Home";
+import { SignIn } from "./pages/SignIn";
+import { SignUp } from "./pages/SignUp";
+import { ShoppingCart } from "./pages/ShoppingCart";
 import { Search } from "./features/search/Search";
-import { DetailedBook } from "./pages/detailed-book/DetailedBook";
+import { DetailedBook } from "./pages/DetailedBook";
 
 function App() {
   const appRef = React.createRef<HTMLDivElement>();

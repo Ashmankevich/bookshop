@@ -1,6 +1,6 @@
 import style from "./BookDetails.module.css";
-import { GetBookDetailsApi } from "../../../api/types";
 import { ButtonPrimary } from "../../button/button-primary/ButtonPrimary";
+import { GetBookDetailsApi } from "../../../store/types";
 
 type BookDetailsProps = {
   book: GetBookDetailsApi;

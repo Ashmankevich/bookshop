@@ -1,14 +1,13 @@
-import style from "./DetailedBook.module.css";
-import { Template } from "../../template/Template";
-import { Subscribe } from "../../ui/subscribe/Subscribe";
+import { Template } from "../template/Template";
+import { Subscribe } from "../ui/subscribe/Subscribe";
 import { useEffect } from "react";
-import { useAppDispatch, useAppSelector } from "../../store/hooks";
-import { getBooks } from "../../store/selectors";
-import { fetchBookDetails } from "../../store/slices/bookSlice";
-import { BookDetails } from "../../ui/books/book-details/BookDetails";
-import { ButtonBack } from "../../ui/button/button-back/ButtonBack";
+import { useAppDispatch, useAppSelector } from "../store/hooks";
+import { getBooks } from "../store/selectors";
+import { fetchBookDetails } from "../store/slices/bookSlice";
+import { BookDetails } from "../ui/books/book-details/BookDetails";
+import { ButtonBack } from "../ui/button/button-back/ButtonBack";
 import { useNavigate, useParams } from "react-router-dom";
-import { BackIcon } from "../../assets";
+import { BackIcon } from "../assets";
 
 type DetailedBookProps = {};
 
@@ -27,15 +26,14 @@ export const DetailedBook: React.FC<DetailedBookProps> = () => {
     navigate(-1);
   };
   return (
-    <div className={style.wrapper}>
+    <>
       <Template>
         <ButtonBack onClick={buttonBack}>
-          {" "}
           <BackIcon></BackIcon>
         </ButtonBack>
         <BookDetails book={result}></BookDetails>
         <Subscribe></Subscribe>
       </Template>
-    </div>
+    </>
   );
 };

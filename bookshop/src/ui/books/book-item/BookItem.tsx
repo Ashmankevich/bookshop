@@ -1,6 +1,6 @@
 import style from "./BookItem.module.css";
-import { NewBookApi } from "../../../api/types";
 import { Link } from "react-router-dom";
+import { NewBookApi } from "../../../store/types";
 
 type BookItemProps = {
   book: NewBookApi;

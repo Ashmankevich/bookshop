@@ -1,7 +1,12 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { bookApi } from "../../api/bookApi";
-import { GetBookDetailsApi, NewBooksApi } from "../../api/types";
-import { BookApi, BooksApiResult, keyWords } from "../types";
+import { bookApi } from "../bookApi";
+import {
+  BookApi,
+  BooksApiResult,
+  GetBookDetailsApi,
+  keyWords,
+  NewBooksApi,
+} from "../types";
 
 const initialState: BookApi = {
   books: [],

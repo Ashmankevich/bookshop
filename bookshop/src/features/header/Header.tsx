@@ -8,7 +8,7 @@ import {
 } from "../../assets";
 import { useAppSelector } from "../../store/hooks";
 import { getCartInfo } from "../../store/selectors";
-import { AppPages } from "../../types";
+import { AppPages } from "../../routes";
 import { ButtonPrimary } from "../../ui/button/button-primary/ButtonPrimary";
 import { Input } from "../../ui/input/Input";
 import style from "./Header.module.css";
