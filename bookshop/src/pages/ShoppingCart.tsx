@@ -1,3 +1,4 @@
+import style from "./ShoppingCart.module.css";
 import { Title } from "../ui/title/Title";
 import { Template } from "../template/Template";
 import { useNavigate } from "react-router-dom";
@@ -16,10 +17,10 @@ export const ShoppingCart: React.FC<ShoppingCartProps> = () => {
   return (
     <>
       <Template>
-        <ButtonBack onClick={buttonBack}>
+        <ButtonBack className={style.buttonBack} onClick={buttonBack}>
           <BackIcon></BackIcon>
         </ButtonBack>
-        <Title>Your Cart</Title>
+        <Title className={style.title}>Your Cart</Title>
         <Cart></Cart>
       </Template>
     </>

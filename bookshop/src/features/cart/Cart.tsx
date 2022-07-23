@@ -58,18 +58,15 @@ export const Cart: React.FC<CartProps> = () => {
                 <div className={style.containerDescription}>
                   <p className={style.title}>{book.title}</p>
                   <p className={style.subTitle}>
-                    {book.subtitle === "" ? "" : `${book.subtitle}, `}
-                  </p>
-                  <p className={style.subTitle}>
-                    {book.publisher} {book.year}
+                    {book.publisher}, {book.year}
                   </p>
                   <div className={style.containerAmount}>
-                    <ButtonPrimary>
-                      <AddItemIcon onClick={() => AddItem(book)} />
+                    <ButtonPrimary className={style.button}>
+                      <RemoveIcon onClick={() => RemoveItem(book)} />
                     </ButtonPrimary>
                     <p className={style.text}>{book.amount}</p>
-                    <ButtonPrimary>
-                      <RemoveIcon onClick={() => RemoveItem(book)} />
+                    <ButtonPrimary className={style.button}>
+                      <AddItemIcon onClick={() => AddItem(book)} />
                     </ButtonPrimary>
                   </div>
                 </div>
@@ -80,10 +77,10 @@ export const Cart: React.FC<CartProps> = () => {
                         2
                       )} $`}
                 </p>
+                <ButtonPrimary className={style.buttonDelete}>
+                  <DeleteIcon onClick={() => DeleteCart(book)} />
+                </ButtonPrimary>
               </div>
-              <ButtonPrimary>
-                <DeleteIcon onClick={() => DeleteCart(book)} />
-              </ButtonPrimary>
             </div>
           );
         })}

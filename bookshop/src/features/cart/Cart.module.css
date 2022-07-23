@@ -3,21 +3,12 @@
    flex-direction: column;
 }
 
-.containerTotalPrice {
-   max-width: 300px;
-   width: 100%;
-   margin-left: auto;
-}
-
-.totalPrice {
-   font-size: 35px;
-   font-weight: 700;
-   line-height: 60px;
+.link {
+   background-color: #f4eefd;
 }
 
 .wrapper {
    position: relative;
-   margin: 0 auto;
    margin-bottom: 20px;
    border-bottom: 1px solid #e5e5e5;
 }
@@ -37,8 +28,13 @@
    width: 100%;
 }
 
+.containerDescription {
+   max-width: 550px;
+   width: 100%;
+}
+
 .title {
-   margin: 25px 0;
+   margin: 25px 0 10px 0;
    padding: 0 10px;
    font-size: 24px;
    font-weight: 700;
@@ -50,7 +46,7 @@
    font-size: 16px;
    font-weight: 700;
    line-height: 24px;
-   margin-bottom: 15px;
+   margin: 0 0 15px 0;
    padding: 0 10px;
    color: #a8a8a8;
 }
@@ -71,12 +67,51 @@
 }
 
 .price {
-   font-size: 24px;
+   font-size: 40px;
    font-weight: 700;
-   line-height: 32px;
    color: #313037;
    display: flex;
    justify-content: center;
    align-items: center;
-   width: 155px;
+   width: 260px;
+   margin-left: 100px;
+}
+
+.button {
+   margin: 5px 10px 0 10px;
+   background-color: white;
+   box-shadow: none;
+}
+
+.button:hover,
+button:active {
+   background-color: white;
+   box-shadow: none;
+}
+
+.buttonDelete {
+   margin: 5px 10px 0 10px;
+   background-color: white;
+   box-shadow: none;
+}
+
+.buttonDelete:hover {
+   background-color: white;
+   box-shadow: none;
+}
+
+.buttonDelete svg path:hover {
+   fill: tomato;
+}
+
+.containerTotalPrice {
+   max-width: 500px;
+   width: 100%;
+   margin-left: auto;
+}
+
+.totalPrice {
+   font-size: 55px;
+   font-weight: 700;
+   line-height: 60px;
 }
