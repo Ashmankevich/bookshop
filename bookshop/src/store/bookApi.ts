@@ -9,7 +9,7 @@ class Api {
   });
 
   public async getNewBooks(): Promise<NewBooksApi> {
-    const { data } = await this.api.get<NewBooksApi>("/new");
+    const { data } = await this.api.get<NewBooksApi>("new");
     return data;
   }
   public async searchBooks(
@@ -17,12 +17,12 @@ class Api {
     page: string
   ): Promise<SearchBooksApi> {
     const { data } = await this.api.get<SearchBooksApi>(
-      `/search/${title}/${page}`
+      `search/${title}/${page}`
     );
     return data;
   }
   public async getBookDetails(isbn: string): Promise<GetBookDetailsApi> {
-    const { data } = await this.api.get<GetBookDetailsApi>(`/books/${isbn}`);
+    const { data } = await this.api.get<GetBookDetailsApi>(`books/${isbn}`);
     return data;
   }
 }

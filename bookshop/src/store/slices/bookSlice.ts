@@ -11,7 +11,7 @@ import {
 const initialState: BookApi = {
   books: [],
   error: null,
-  status: "idle",
+  status: "loading",
   total: "0",
   result: {
     authors: "",

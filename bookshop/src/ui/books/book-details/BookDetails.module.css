@@ -21,7 +21,7 @@
 }
 
 .containerBook {
-   max-width: 448px;
+   max-width: 465px;
    width: 100%;
    border-top: 1px solid #e7e7e7;
 }
@@ -74,7 +74,7 @@
 }
 
 .DescTitle {
-   font-size: 16px;
+   font-size: 18px;
    font-weight: 600;
    color: #313037;
    margin-bottom: 40px;

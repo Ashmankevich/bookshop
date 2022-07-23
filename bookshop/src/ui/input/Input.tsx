@@ -2,7 +2,6 @@ import style from "./Input.module.css";
 
 type InputProps = {
   value?: string;
-  onChange?: React.ChangeEventHandler<HTMLInputElement> | undefined;
   type: string;
   label?: string;
   className?: string;
@@ -11,7 +10,6 @@ type InputProps = {
 
 export const Input: React.FC<InputProps> = ({
   value,
-  onChange,
   label,
   type,
   className = "",
@@ -25,7 +23,6 @@ export const Input: React.FC<InputProps> = ({
         placeholder={placeholder}
         type={type}
         value={value}
-        onChange={onChange}
       />
     </label>
   );

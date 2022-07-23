@@ -10,7 +10,6 @@ import { useAppSelector } from "../../store/hooks";
 import { getCartInfo } from "../../store/selectors";
 import { AppPages } from "../../routes";
 import { ButtonPrimary } from "../../ui/button/button-primary/ButtonPrimary";
-import { Input } from "../../ui/input/Input";
 import style from "./Header.module.css";
 
 export const Header: React.FC = () => {
@@ -29,12 +28,12 @@ export const Header: React.FC = () => {
         </Link>
       </div>
       <form onSubmit={handleSubmit(onSubmit)} className={style.form}>
-        <Input
+        <input
           className={style.input}
           type="text"
           placeholder="Search"
           {...register("title")}
-        ></Input>
+        ></input>
         <ButtonPrimary type="submit" className={style.button}>
           <SearchIcon></SearchIcon>
         </ButtonPrimary>

@@ -1,4 +1,4 @@
-export type RequestStatusType = "idle" | "loading" | "success" | "error";
+export type RequestStatusType = "loading" | "success" | "error";
 
 export type NewBooks = {
   error: any;
