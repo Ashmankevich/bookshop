@@ -9,14 +9,16 @@
 }
 
 .input {
-   width: 720px;
+   width: 766px;
    margin-bottom: 60px;
 }
 
 .title {
+   font-size: 40px;
    color: #313037;
    text-transform: uppercase;
    margin-bottom: 5px;
+   padding: 0;
 }
 
 .text {
@@ -29,12 +31,36 @@
 
 .button {
    height: 58px;
-   margin-top: 10px;
-   width: 280px;
+   padding: 0 40px;
+   text-transform: uppercase;
 }
 
 .button:hover,
 :active {
    background-color: none;
    box-shadow: none;
+}
+
+@media (max-width: 568px) {
+   .form {
+      flex-direction: column;
+      margin-bottom: 0;
+   }
+   .input {
+      max-width: 200px;
+      width: 100%;
+      margin: 0;
+   }
+   .button {
+      margin: 0;
+   }
+   .title {
+      font-size: 28px;
+   }
+   .text {
+      font-size: 16px;
+   }
+   .block {
+      padding: 24px;
+   }
 }

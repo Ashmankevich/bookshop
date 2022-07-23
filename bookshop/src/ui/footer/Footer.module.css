@@ -14,3 +14,19 @@
    margin-top: 35px;
    border-top: 1px solid #e7e7e7;
 }
+
+@media (max-width: 568px) {
+   .wrapper {
+      flex-direction: column;
+   }
+   .text {
+      font-size: 12px;
+      padding: 0;
+   }
+   .text:first-child {
+      padding-top: 20px;
+   }
+   .text:last-child {
+      padding-bottom: 20px;
+   }
+}

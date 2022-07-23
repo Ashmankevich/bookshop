@@ -2,19 +2,20 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 24px 0;
+   padding: 24px 0 0 0;
    border-bottom: 1px solid #e7e7e7;
 }
 
 .form {
    position: relative;
-   margin-right: 116px;
+   max-width: 650px;
+   width: 100%;
 }
 
 .button {
    position: absolute;
-   right: 5px;
-   top: 26px;
+   right: 135px;
+   top: 18px;
    background-color: white;
    border: none;
    padding: 0;
@@ -36,10 +37,6 @@
    width: 100%;
 }
 
-.input {
-   width: 544px;
-}
-
 .notificationContainer {
    position: relative;
 }
@@ -59,4 +56,25 @@
 
 .link {
    text-decoration: none;
+}
+
+.input {
+   max-width: 500px;
+   width: 100%;
+}
+
+@media (max-width: 568px) {
+   .wrapper {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 24px 0;
+   }
+   .logoName {
+      font-size: 28px;
+   }
+   .input {
+      max-width: 80px;
+      width: 100%;
+   }
 }

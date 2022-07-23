@@ -7,7 +7,7 @@ export const Subscribe: React.FC = () => {
   return (
     <div className={style.wrapper}>
       <div className={style.block}>
-        <Title className={style.title}>SUBSCRIBE TO NEWSLETTER</Title>
+        <Title className={style.title}>subscribe to newsletter</Title>
         <p className={style.text}>
           Be the first to know about new IT books, upcoming releases, exclusive
           offers and more.
@@ -18,7 +18,7 @@ export const Subscribe: React.FC = () => {
             type="text"
             placeholder="Your email"
           ></Input>
-          <ButtonPrimary className={style.button}>SUBSCRIBE</ButtonPrimary>
+          <ButtonPrimary className={style.button}>subscribe</ButtonPrimary>
         </form>
       </div>
     </div>

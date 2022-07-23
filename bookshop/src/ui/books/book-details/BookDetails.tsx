@@ -1,12 +1,18 @@
 import style from "./BookDetails.module.css";
 import { ButtonPrimary } from "../../button/button-primary/ButtonPrimary";
 import { GetBookDetailsApi } from "../../../store/types";
+import { addCart } from "../../../store/slices/cartSlice";
+import { useAppDispatch } from "../../../store/hooks";
 
 type BookDetailsProps = {
   book: GetBookDetailsApi;
 };
 
 export const BookDetails: React.FC<BookDetailsProps> = ({ book }) => {
+  const dispatch = useAppDispatch();
+  const Cart = (book: GetBookDetailsApi) => {
+    dispatch(addCart({ ...book, amount: 1 }));
+  };
   return (
     <>
       <div className={style.wrapperBook} key={book.isbn13}>
@@ -30,7 +36,11 @@ export const BookDetails: React.FC<BookDetailsProps> = ({ book }) => {
             <div className={style.fieldValue}>{book.year}</div>
           </div>
           <div className={style.containerButton}>
-            <ButtonPrimary className={style.button} type="button">
+            <ButtonPrimary
+              className={style.button}
+              type="button"
+              onClick={() => Cart(book)}
+            >
               add to cart
             </ButtonPrimary>
           </div>

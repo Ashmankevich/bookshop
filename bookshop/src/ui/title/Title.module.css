@@ -1,5 +1,19 @@
 .title {
-   font-size: 40px;
+   font-size: 56px;
+   font-weight: 700;
    color: #313037;
    text-transform: uppercase;
+   padding: 40px 0;
+}
+
+@media (max-width: 1024px) {
+   .title {
+      font-size: 56px;
+   }
+}
+
+@media (max-width: 568px) {
+   .title {
+      font-size: 32px;
+   }
 }
