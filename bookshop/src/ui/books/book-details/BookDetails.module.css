@@ -1,13 +1,16 @@
+.bookTitle {
+   margin: 0;
+}
+
 .wrapperBook {
    display: flex;
+   justify-content: space-between;
    margin-bottom: 72px;
 }
 
 .containerPic {
    max-width: 544px;
    width: 100%;
-   padding: 61px 0px;
-   margin-right: 128px;
    position: relative;
    background: #f4eefd;
 }
@@ -34,7 +37,6 @@
 .bookPrice {
    font-size: 40px;
    font-weight: 700;
-   line-height: 60px;
 }
 
 .bookList {
@@ -47,28 +49,50 @@
 
 .nameField {
    font-size: 16px;
-   font-weight: 700;
-   line-height: 24px;
-   font-weight: 400;
    color: #a8a8a8;
+   margin: 0;
 }
 
 .fieldValue {
    font-size: 16px;
-   line-height: 32px;
    color: #313037;
-   line-height: 20px;
 }
 
 .containerButton {
-   margin-bottom: 20px;
    font-weight: 400;
    font-size: 16px;
-   line-height: 24px;
    cursor: pointer;
 }
 
 .button {
    width: 100%;
-   margin: 0 auto 20px;
+   margin: 0 auto;
+}
+
+.containerDesc {
+   margin-bottom: 100px;
+}
+
+.DescTitle {
+   font-size: 16px;
+   font-weight: 600;
+   color: #313037;
+   margin-bottom: 40px;
+   position: relative;
+}
+
+.DescTitle:after {
+   content: " ";
+   display: block;
+   border-bottom: 1px solid #e7e7e7;
+   max-width: 100%;
+   width: 100%;
+   position: absolute;
+   top: calc(100% + 20px);
+}
+
+.DescText {
+   font-size: 16px;
+   font-weight: 400;
+   color: #313037;
 }
