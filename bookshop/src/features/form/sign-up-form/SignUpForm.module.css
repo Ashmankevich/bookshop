@@ -26,6 +26,17 @@
    text-align: center;
    display: flex;
    justify-content: space-around;
+   position: relative;
+}
+
+.nav:after {
+   content: " ";
+   display: block;
+   border-bottom: 2px solid #313037;
+   width: 239px;
+   position: absolute;
+   top: 100%;
+   left: 53.5%;
 }
 
 .login {
@@ -44,4 +55,21 @@
 .register:hover,
 .register:active {
    color: #313037;
+}
+
+.input {
+   display: block;
+   width: 480px;
+   font-size: 16px;
+   line-height: 32px;
+   padding: 12px 20px;
+   outline: none;
+   border: 1px solid #e7e7e7;
+   margin-bottom: 20px;
+}
+
+.label {
+   font-size: 16px;
+   line-height: 32px;
+   font-weight: 700;
 }

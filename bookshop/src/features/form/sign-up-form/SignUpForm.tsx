@@ -1,6 +1,5 @@
 import style from "./SignUpForm.module.css";
 import { ButtonPrimary } from "../../../ui/button/button-primary/ButtonPrimary";
-import { Input } from "../../../ui/input/Input";
 import { Link } from "react-router-dom";
 import { AppPages } from "../../../routes";
 import { useForm } from "react-hook-form";
@@ -40,28 +39,33 @@ export const SignUpForm: React.FC<SignUpFormProps> = () => {
             sign up
           </Link>
         </nav>
-        <Input
-          className={style.input}
-          label="Name"
-          {...register("name")}
-          type="text"
-          placeholder="Your name"
-        ></Input>
-        <Input
-          className={style.input}
-          label="Email"
-          {...register("email")}
-          type="text"
-          placeholder="Your email"
-        ></Input>
-        <Input
-          className={style.input}
-          label="Password"
-          {...register("password")}
-          type="text"
-          placeholder="Your password"
-        ></Input>
-        <p className={style.text}>Forgot password ?</p>
+        <label className={style.label}>
+          Name
+          <input
+            className={style.input}
+            {...register("name")}
+            type="text"
+            placeholder="Your name"
+          ></input>
+        </label>
+        <label className={style.label}>
+          Email
+          <input
+            className={style.input}
+            {...register("email")}
+            type="text"
+            placeholder="Your email"
+          ></input>
+        </label>
+        <label className={style.label}>
+          Password
+          <input
+            className={style.input}
+            {...register("password")}
+            type="password"
+            placeholder="Your password"
+          ></input>
+        </label>
         {isSignUpError ? (
           <p>Wrong data... Please, check your email or password</p>
         ) : (

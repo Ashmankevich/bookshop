@@ -1,5 +1,4 @@
 import { ButtonPrimary } from "../../ui/button/button-primary/ButtonPrimary";
-import { Input } from "../../ui/input/Input";
 import style from "./User.module.css";
 
 export const User: React.FC = () => {
@@ -12,46 +11,51 @@ export const User: React.FC = () => {
     >
       <h3 className={style.title}>profile</h3>
       <div className={style.groupProfile}>
-        <Input
-          className={style.input}
-          label="Name"
-          type="text"
-          placeholder="Andrew Ashmankevich"
-          value={""}
-        ></Input>
-        <Input
-          className={style.input}
-          label="Email"
-          type="text"
-          placeholder="Ashmankevich.a@gmail.com"
-          value={""}
-        ></Input>
+        <label className={style.label}>
+          Name
+          <input
+            className={style.input}
+            type="text"
+            placeholder="Andrew Ashmankevich"
+          ></input>
+        </label>
+        <label className={style.label}>
+          Email
+          <input
+            className={style.input}
+            type="text"
+            placeholder="Ashmankevich.a@gmail.com"
+          ></input>
+        </label>
       </div>
       <h3 className={style.title}>password</h3>
       <div className={style.groupPassword}>
-        <Input
-          className={style.input}
-          label="Password"
-          type="password"
-          placeholder="Your password"
-          value={""}
-        ></Input>
+        <label className={style.label}>
+          Password
+          <input
+            className={style.input}
+            type="password"
+            placeholder="Password"
+          ></input>
+        </label>
       </div>
       <div className={style.groupNewPassword}>
-        <Input
-          className={style.input}
-          label="New password"
-          type="password"
-          placeholder="New password"
-          value={""}
-        ></Input>
-        <Input
-          className={style.input}
-          label="Confirm new password"
-          type="password"
-          placeholder="Confirm new password"
-          value={""}
-        ></Input>
+        <label className={style.label}>
+          New password
+          <input
+            className={style.input}
+            type="password"
+            placeholder="New password"
+          ></input>
+        </label>
+        <label className={style.label}>
+          Confirm new password
+          <input
+            className={style.input}
+            type="password"
+            placeholder="Confirm new password"
+          ></input>
+        </label>
       </div>
       <div className={style.line}></div>
       <div className={style.button}>
