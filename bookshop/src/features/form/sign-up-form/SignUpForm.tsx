@@ -40,15 +40,6 @@ export const SignUpForm: React.FC<SignUpFormProps> = () => {
           </Link>
         </nav>
         <label className={style.label}>
-          Name
-          <input
-            className={style.input}
-            {...register("name")}
-            type="text"
-            placeholder="Your name"
-          ></input>
-        </label>
-        <label className={style.label}>
           Email
           <input
             className={style.input}

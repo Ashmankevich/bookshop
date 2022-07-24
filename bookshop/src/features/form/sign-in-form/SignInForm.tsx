@@ -45,15 +45,6 @@ export const SignInForm: React.FC<SignInFormProps> = () => {
           </Link>
         </nav>
         <label className={style.label}>
-          Name
-          <input
-            className={style.input}
-            {...register("name")}
-            type="text"
-            placeholder="Your name"
-          ></input>
-        </label>
-        <label className={style.label}>
           Email
           <input
             className={style.input}
