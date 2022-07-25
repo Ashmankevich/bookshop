@@ -1,24 +1,28 @@
 import { Title } from "../ui/title/Title";
 import { Template } from "../template/Template";
-import { User } from "../features/user/User";
 import { Navigate } from "react-router-dom";
 import { AppPages } from "../routes";
-import { useSelector } from "react-redux";
-import { RootState } from "../store/store";
+import { useAppDispatch } from "../store/hooks";
+import { useAuth } from "../store/hooks";
+import { removeUser } from "../store/slices/userTestSlice";
 
 type AccountProps = {};
 
 export const Account: React.FC<AccountProps> = () => {
-  const { isSignIn } = useSelector(({ user }: RootState) => user);
-  if (isSignIn) {
-    return (
-      <>
-        <Template>
-          <Title>Account</Title>
-          <User></User>
-        </Template>
-      </>
-    );
-  }
-  return <Navigate to={AppPages.SIGN_IN} />;
+  const dispatch = useAppDispatch();
+
+  const { isAuth, email } = useAuth();
+
+  return isAuth ? (
+    <>
+      <Template>
+        <Title>Account</Title>
+        <button onClick={() => dispatch(removeUser())}>
+          Log out from {email}
+        </button>
+      </Template>
+    </>
+  ) : (
+    <Navigate to={AppPages.SIGN_IN} />
+  );
 };
