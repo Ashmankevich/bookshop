@@ -1,4 +1,4 @@
-import { SignUpForm } from "../features/form/sign-up-form/SignUpForm";
+import { SignUpPage } from "../features/newForm/SignUp";
 import { Template } from "../template/Template";
 
 type SignUpProps = {};
@@ -7,7 +7,7 @@ export const SignUp: React.FC<SignUpProps> = () => {
   return (
     <div>
       <Template>
-        <SignUpForm></SignUpForm>
+        <SignUpPage></SignUpPage>
       </Template>
     </div>
   );
