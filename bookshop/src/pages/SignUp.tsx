@@ -1,4 +1,4 @@
-import { SignUpPage } from "../features/newForm/SignUp";
+import { Register } from "../features/auth/register/Register";
 import { Template } from "../template/Template";
 
 type SignUpProps = {};
@@ -7,7 +7,7 @@ export const SignUp: React.FC<SignUpProps> = () => {
   return (
     <div>
       <Template>
-        <SignUpPage></SignUpPage>
+        <Register></Register>
       </Template>
     </div>
   );

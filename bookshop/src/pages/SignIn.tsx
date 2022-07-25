@@ -1,4 +1,4 @@
-import { Login } from "../features/newForm/Login";
+import { Login } from "../features/auth/login/Login";
 import { Template } from "../template/Template";
 
 type SignInProps = {};

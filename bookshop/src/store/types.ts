@@ -36,13 +36,6 @@ export type keyWords = {
   page: string;
 };
 
-export type User = {
-  isSignIn: boolean;
-  email: string | undefined;
-  name: string | undefined;
-  password: string | undefined;
-};
-
 export type Cart = {
   cart: BookCartApi[];
   total: number;

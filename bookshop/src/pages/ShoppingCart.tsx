@@ -5,8 +5,7 @@ import { BackIcon } from "../assets";
 import { ButtonBack } from "../ui/button/button-back/ButtonBack";
 import { Cart } from "../features/cart/Cart";
 import { AppPages } from "../routes";
-import { useSelector } from "react-redux";
-import { RootState } from "../store/store";
+import { useAuth } from "../store/hooks";
 
 type ShoppingCartProps = {};
 
@@ -15,29 +14,28 @@ export const ShoppingCart: React.FC<ShoppingCartProps> = () => {
   const buttonBack = () => {
     navigate(-1);
   };
+  const { isAuth } = useAuth();
 
-  const { isSignIn } = useSelector(({ user }: RootState) => user);
-  if (isSignIn) {
-    return (
-      <>
-        <Template>
-          <ButtonBack onClick={buttonBack}>
-            <BackIcon></BackIcon>
-          </ButtonBack>
-          <Title>
-            <p
-              style={{
-                margin: "0",
-                paddingTop: "10px",
-              }}
-            >
-              Your Cart
-            </p>
-          </Title>
-          <Cart></Cart>
-        </Template>
-      </>
-    );
-  }
-  return <Navigate to={AppPages.SIGN_IN} />;
+  return isAuth ? (
+    <>
+      <Template>
+        <ButtonBack onClick={buttonBack}>
+          <BackIcon></BackIcon>
+        </ButtonBack>
+        <Title>
+          <p
+            style={{
+              margin: "0",
+              paddingTop: "10px",
+            }}
+          >
+            Your Cart
+          </p>
+        </Title>
+        <Cart></Cart>
+      </Template>
+    </>
+  ) : (
+    <Navigate to={AppPages.SIGN_IN} />
+  );
 };

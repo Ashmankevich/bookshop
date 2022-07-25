@@ -4,7 +4,8 @@ import { Navigate } from "react-router-dom";
 import { AppPages } from "../routes";
 import { useAppDispatch } from "../store/hooks";
 import { useAuth } from "../store/hooks";
-import { removeUser } from "../store/slices/userTestSlice";
+import { removeUser } from "../store/slices/userSlice";
+import { ButtonPrimary } from "../ui/button/button-primary/ButtonPrimary";
 
 type AccountProps = {};
 
@@ -17,9 +18,9 @@ export const Account: React.FC<AccountProps> = () => {
     <>
       <Template>
         <Title>Account</Title>
-        <button onClick={() => dispatch(removeUser())}>
+        <ButtonPrimary onClick={() => dispatch(removeUser())}>
           Log out from {email}
-        </button>
+        </ButtonPrimary>
       </Template>
     </>
   ) : (

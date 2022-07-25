@@ -1,20 +1,25 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { AppPages } from "../../routes";
-import { ButtonPrimary } from "../../ui/button/button-primary/ButtonPrimary";
+import { AppPages } from "../../../routes";
+import { ButtonPrimary } from "../../../ui/button/button-primary/ButtonPrimary";
 import style from "./FormLogin.module.css";
 
-type FormProps = {
+type FormLoginProps = {
+  className?: string;
   title: string;
   handleClick: (email: string, pass: string) => void;
 };
 
-export const FormLogin: React.FC<FormProps> = ({ title, handleClick }) => {
+export const FormLogin: React.FC<FormLoginProps> = ({
+  title,
+  handleClick,
+  className = "",
+}) => {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
 
   return (
-    <div className={style.form}>
+    <div className={`${style.form} ${className}`}>
       <nav className={style.nav}>
         <Link to={AppPages.SIGN_IN} className={style.login}>
           sign in
@@ -30,7 +35,7 @@ export const FormLogin: React.FC<FormProps> = ({ title, handleClick }) => {
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="email"
+          placeholder="Email"
         />
       </label>
       <label className={style.label}>
@@ -40,7 +45,7 @@ export const FormLogin: React.FC<FormProps> = ({ title, handleClick }) => {
           type="password"
           value={pass}
           onChange={(e) => setPass(e.target.value)}
-          placeholder="password"
+          placeholder="Password"
         />
       </label>
       <ButtonPrimary

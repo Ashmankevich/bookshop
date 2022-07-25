@@ -1,0 +1,10 @@
+.wrapper {
+   display: block;
+   position: relative;
+}
+
+.containerText {
+   position: absolute;
+   top: 68%;
+   left: 32%;
+}
