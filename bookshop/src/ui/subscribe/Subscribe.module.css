@@ -1,3 +1,9 @@
+.wrapper {
+   max-width: 1120px;
+   width: 100%;
+   margin: 0 auto;
+}
+
 .block {
    background-color: #f4eefd;
    padding: 40px 80px 0 80px;
@@ -10,13 +16,13 @@
 
 .input {
    display: block;
+   max-width: 766px;
+   width: 100%;
    font-size: 16px;
    line-height: 32px;
    padding: 12px 20px;
    outline: none;
    border: 1px solid #e7e7e7;
-   max-width: 766px;
-   width: 100%;
    margin-bottom: 60px;
 }
 
@@ -53,21 +59,23 @@
       flex-direction: column;
       margin-bottom: 0;
    }
-   .input {
-      max-width: 200px;
-      width: 100%;
-      margin: 0;
-   }
    .button {
       margin: 0;
    }
+   .input {
+      padding: 12px 0;
+      margin-bottom: 24px;
+   }
    .title {
       font-size: 28px;
+      margin-bottom: 10px;
+      text-align: left;
    }
    .text {
       font-size: 16px;
    }
    .block {
       padding: 24px;
+      margin-bottom: 56px;
    }
 }

@@ -4,6 +4,9 @@
    align-items: center;
    padding: 24px 0 0 0;
    border-bottom: 1px solid #e7e7e7;
+   max-width: 1120px;
+   width: 100%;
+   margin: 0 auto;
 }
 
 .form {
@@ -76,11 +79,17 @@
       align-items: flex-start;
       padding: 24px 0;
    }
+   .form {
+      margin-bottom: 25px;
+   }
    .logoName {
-      font-size: 28px;
+      font-size: 25px;
    }
    .input {
-      max-width: 80px;
-      width: 100%;
+      padding: 12px 0;
+   }
+   .button {
+      right: 34px;
+      top: 18px;
    }
 }
