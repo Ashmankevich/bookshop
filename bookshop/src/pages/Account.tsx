@@ -6,6 +6,7 @@ import { useAppDispatch } from "../store/hooks";
 import { useAuth } from "../store/hooks";
 import { removeUser } from "../store/slices/userSlice";
 import { ButtonPrimary } from "../ui/button/button-primary/ButtonPrimary";
+import style from "./Account.module.css";
 
 type AccountProps = {};
 
@@ -18,7 +19,10 @@ export const Account: React.FC<AccountProps> = () => {
     <>
       <Template>
         <Title>Account</Title>
-        <ButtonPrimary onClick={() => dispatch(removeUser())}>
+        <ButtonPrimary
+          className={style.button}
+          onClick={() => dispatch(removeUser())}
+        >
           Log out from {email}
         </ButtonPrimary>
       </Template>

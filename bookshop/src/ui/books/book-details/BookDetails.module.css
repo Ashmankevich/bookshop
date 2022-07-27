@@ -96,3 +96,19 @@
    font-weight: 400;
    color: #313037;
 }
+
+@media (max-width: 568px) {
+   .wrapperBook {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+   }
+   .bookList {
+      grid-template-columns: 1fr;
+      text-overflow: ellipsis;
+      overflow: hidden;
+   }
+   .containerDesc {
+      margin: 0 auto 50px;
+   }
+}
