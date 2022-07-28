@@ -97,10 +97,27 @@
    color: #313037;
 }
 
+@media (max-width: 1100px) {
+   .wrapperBook {
+      flex-direction: column;
+      display: flex;
+      align-self: auto;
+   }
+   .containerPic {
+      max-width: 100%;
+   }
+   .containerBook {
+      max-width: 100%;
+      justify-content: space-between;
+   }
+   .fieldValue {
+      text-align: right;
+   }
+}
+
 @media (max-width: 568px) {
    .wrapperBook {
       flex-direction: column;
-      align-items: center;
       margin-bottom: 50px;
    }
    .bookList {
@@ -110,5 +127,8 @@
    }
    .containerDesc {
       margin: 0 auto 50px;
+   }
+   .fieldValue {
+      text-align: left;
    }
 }

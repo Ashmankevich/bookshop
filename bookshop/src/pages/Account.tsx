@@ -1,12 +1,10 @@
 import { Title } from "../ui/title/Title";
 import { Template } from "../template/Template";
-import { Navigate } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { AppPages } from "../routes";
 import { useAppDispatch } from "../store/hooks";
 import { useAuth } from "../store/hooks";
 import { removeUser } from "../store/slices/userSlice";
-import { ButtonPrimary } from "../ui/button/button-primary/ButtonPrimary";
-import style from "./Account.module.css";
 
 type AccountProps = {};
 
@@ -19,12 +17,35 @@ export const Account: React.FC<AccountProps> = () => {
     <>
       <Template>
         <Title>Account</Title>
-        <ButtonPrimary
-          className={style.button}
+        <button
+          style={{
+            maxWidth: "350px",
+            width: "100%",
+            marginBottom: "50px",
+            fontSize: "16px",
+            border: "none",
+            cursor: "pointer",
+            padding: "14px",
+            color: "white",
+            backgroundColor: "#5b5a62",
+          }}
           onClick={() => dispatch(removeUser())}
         >
           Log out from {email}
-        </ButtonPrimary>
+        </button>
+        <Link
+          style={{
+            textDecoration: "none",
+            cursor: "pointer",
+            display: "block",
+            marginBottom: "50px",
+            fontSize: "16px",
+            color: "#5b5a62",
+          }}
+          to={AppPages.HOME}
+        >
+          Jump to Main
+        </Link>
       </Template>
     </>
   ) : (

@@ -8,3 +8,10 @@
    top: 68%;
    left: 32%;
 }
+
+@media (max-width: 568px) {
+   .containerText {
+      top: 72%;
+      left: 5%;
+   }
+}

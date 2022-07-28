@@ -10,3 +10,9 @@
    padding: 14px 0;
    background-color: white;
 }
+
+@media (max-width: 568px) {
+   .button {
+      margin: 40px 0 0 0;
+   }
+}

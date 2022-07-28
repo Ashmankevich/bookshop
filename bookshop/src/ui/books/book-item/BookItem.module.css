@@ -63,6 +63,16 @@
    padding: 0 10px 10px;
 }
 
+@media (min-width: 569px) and (max-width: 1140px) {
+   .wrapper {
+      max-width: 328px;
+      margin-right: 0;
+   }
+   .wrapper:nth-child(1n) {
+      margin-right: 32px;
+   }
+}
+
 @media (max-width: 568px) {
    .wrapper {
       max-width: 272px;

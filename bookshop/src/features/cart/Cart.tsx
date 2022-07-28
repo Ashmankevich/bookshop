@@ -73,9 +73,9 @@ export const Cart: React.FC<CartProps> = () => {
                 <p className={style.price}>
                   {book.price === "$0.00"
                     ? "Not Available"
-                    : `${(Number(book.price.slice(1)) * book.amount).toFixed(
+                    : `$${(Number(book.price.slice(1)) * book.amount).toFixed(
                         2
-                      )} $`}
+                      )}`}
                 </p>
                 <ButtonPrimary className={style.buttonDelete}>
                   <DeleteIcon onClick={() => DeleteCart(book)} />

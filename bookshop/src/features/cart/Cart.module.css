@@ -114,4 +114,25 @@ button:active {
    font-size: 55px;
    font-weight: 700;
    line-height: 60px;
+   margin-bottom: 20px;
+}
+
+@media (max-width: 750px) {
+   .container {
+      flex-direction: column;
+      position: relative;
+   }
+   .buttonDelete {
+      position: absolute;
+      top: 0%;
+      right: 8%;
+      background-color: #f4eefd;
+      margin: 0;
+      padding: 0;
+   }
+   .price {
+      margin: 0;
+      display: block;
+      align-items: flex-start;
+   }
 }
