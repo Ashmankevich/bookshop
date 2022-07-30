@@ -32,7 +32,12 @@ export const Header: React.FC = () => {
           className={style.input}
           type="text"
           placeholder="Search"
-          {...register("title")}
+          {...register("title", {
+            required: true,
+            minLength: 1,
+            maxLength: 24,
+            pattern: /^[A-Za-z]+$/i,
+          })}
         ></input>
         <ButtonPrimary type="submit" className={style.button}>
           <SearchIcon></SearchIcon>

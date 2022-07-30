@@ -14,7 +14,9 @@ export const BookItem: React.FC<BookItemProps> = ({ book }) => {
         to={`/bookshop/detailed-book/${book.isbn13}`}
       >
         <img className={style.pic} src={book.image} alt={book.title} />
-        <h2 className={style.title}>{book.title}</h2>
+        <h2 className={style.title}>
+          {book.title ? book.title : "Oops, smth was rong"}
+        </h2>
         <h3 className={style.subtitle}>{book.subtitle}</h3>
         <div className={style.price}>
           {book.price === "$0.00" ? "Not Available" : book.price}

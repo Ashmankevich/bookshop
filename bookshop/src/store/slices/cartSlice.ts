@@ -16,16 +16,16 @@ const cartSlice = createSlice({
         ...state.cart.filter((item) => item.isbn13 !== payload.isbn13),
       ];
     },
-    removeCart: (state, { payload }: PayloadAction<GetBookDetailsApi>) => {
+    deleteCart: (state, { payload }: PayloadAction<GetBookDetailsApi>) => {
       state.cart = state.cart.filter((item) => item.isbn13 !== payload.isbn13);
     },
-    increaseAmount: (state, { payload }: PayloadAction<BookCartApi>) => {
+    addAmount: (state, { payload }: PayloadAction<BookCartApi>) => {
       const cart = state.cart.find((book) => book.isbn13 === payload.isbn13);
       if (cart) {
         cart.amount = cart.amount + 1;
       }
     },
-    decreaseAmount: (state, { payload }: PayloadAction<BookCartApi>) => {
+    removeAmount: (state, { payload }: PayloadAction<BookCartApi>) => {
       const cart = state.cart.find((book) => book.isbn13 === payload.isbn13);
       if (cart) {
         cart.amount = cart.amount - 1;
@@ -36,5 +36,5 @@ const cartSlice = createSlice({
 
 export default cartSlice.reducer;
 
-export const { addCart, removeCart, increaseAmount, decreaseAmount } =
+export const { addCart, deleteCart, addAmount, removeAmount } =
   cartSlice.actions;

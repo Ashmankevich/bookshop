@@ -2,9 +2,9 @@ import style from "./Cart.module.css";
 import { useEffect, useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import {
-  removeCart,
-  increaseAmount,
-  decreaseAmount,
+  deleteCart,
+  addAmount,
+  removeAmount,
 } from "../../store/slices/cartSlice";
 import { BookCartApi } from "../../store/types";
 import { getCartInfo } from "../../store/selectors";
@@ -19,15 +19,15 @@ export const Cart: React.FC<CartProps> = () => {
 
   const dispatch = useAppDispatch();
   const DeleteCart = (book: any) => {
-    dispatch(removeCart(book));
+    dispatch(deleteCart(book));
   };
   const AddItem = (book: BookCartApi) => {
-    dispatch(increaseAmount(book));
+    dispatch(addAmount(book));
   };
 
   const RemoveItem = (book: BookCartApi) => {
     if (book.amount > 1) {
-      dispatch(decreaseAmount(book));
+      dispatch(removeAmount(book));
     }
   };
   const [total, setTotal] = useState(0.0);

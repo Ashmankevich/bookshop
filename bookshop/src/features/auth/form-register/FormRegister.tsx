@@ -7,7 +7,7 @@ import style from "./FormRegister.module.css";
 type FormRegisterProps = {
   className?: string;
   title: string;
-  handleClick: (email: string, pass: string) => void;
+  handleClick: (email: string, password: string) => void;
 };
 
 export const FormRegister: React.FC<FormRegisterProps> = ({
@@ -16,7 +16,7 @@ export const FormRegister: React.FC<FormRegisterProps> = ({
   className = "",
 }) => {
   const [email, setEmail] = useState("");
-  const [pass, setPass] = useState("");
+  const [password, setPassword] = useState("");
 
   return (
     <div className={`${style.form} ${className}`}>
@@ -43,14 +43,14 @@ export const FormRegister: React.FC<FormRegisterProps> = ({
         <input
           className={style.input}
           type="password"
-          value={pass}
-          onChange={(e) => setPass(e.target.value)}
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"
         />
       </label>
       <ButtonPrimary
         className={style.button}
-        onClick={() => handleClick(email, pass)}
+        onClick={() => handleClick(email, password)}
       >
         {title}
       </ButtonPrimary>

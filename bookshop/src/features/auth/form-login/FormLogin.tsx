@@ -7,7 +7,7 @@ import style from "./FormLogin.module.css";
 type FormLoginProps = {
   className?: string;
   title: string;
-  handleClick: (email: string, pass: string) => void;
+  handleClick: (email: string, password: string) => void;
 };
 
 export const FormLogin: React.FC<FormLoginProps> = ({
@@ -16,7 +16,7 @@ export const FormLogin: React.FC<FormLoginProps> = ({
   className = "",
 }) => {
   const [email, setEmail] = useState("");
-  const [pass, setPass] = useState("");
+  const [password, setPassword] = useState("");
 
   return (
     <div className={`${style.form} ${className}`}>
@@ -43,14 +43,14 @@ export const FormLogin: React.FC<FormLoginProps> = ({
         <input
           className={style.input}
           type="password"
-          value={pass}
-          onChange={(e) => setPass(e.target.value)}
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"
         />
       </label>
       <ButtonPrimary
         className={style.button}
-        onClick={() => handleClick(email, pass)}
+        onClick={() => handleClick(email, password)}
       >
         {title}
       </ButtonPrimary>
