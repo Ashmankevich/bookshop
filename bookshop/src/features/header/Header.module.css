@@ -24,8 +24,7 @@
    cursor: pointer;
 }
 
-.button:hover,
-:active {
+.button:hover {
    background-color: white;
    box-shadow: 4px 4px 30px white;
 }

@@ -42,12 +42,6 @@
    text-transform: uppercase;
 }
 
-.button:hover,
-:active {
-   background-color: none;
-   box-shadow: none;
-}
-
 @media (max-width: 568px) {
    .form {
       flex-direction: column;
