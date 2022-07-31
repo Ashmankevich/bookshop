@@ -1,6 +1,5 @@
-# **bookshop**
-
-[Demo](https://ashmankevich.github.io/bookshop/)
+# bookshop
+## [tap to check demo](https://ashmankevich.github.io/bookshop/)
 
 At the moment this is the MVP of my project which called 'bookshop', you can check my [issue](https://github.com/Ashmankevich/spa_bookshop/issues) to understand how I plan to develop this project further.
 
