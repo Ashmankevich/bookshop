@@ -1,5 +1,5 @@
 import axios from "axios";
-import { GetBookDetailsApi, NewBooksApi, SearchBooksApi } from "./types";
+import { GetBookDetailsApi, NewBooksApi, SearchBooksApi } from "../store/types";
 
 class Api {
   private readonly API_URL = "https://api.itbook.store/1.0/";

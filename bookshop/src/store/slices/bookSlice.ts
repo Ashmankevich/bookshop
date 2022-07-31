@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { bookApi } from "../bookApi";
+import { bookApi } from "../../api/bookApi";
 import {
   BookApi,
   BooksApiResult,
