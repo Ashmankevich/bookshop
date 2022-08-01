@@ -3,10 +3,11 @@ import { Title } from "../../ui/title/Title";
 import { Template } from "../../template/Template";
 import { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
-import { getBooks } from "../../store/selectors";
+import { getBooks, getStatus } from "../../store/selectors";
 import { BookList } from "../../ui/books/book-list/BookList";
 import { useParams } from "react-router-dom";
 import { fetchSearchBooks } from "../../store/slices/bookSlice";
+import { Spinner } from "../../ui/spinner/Spinner";
 
 type SearchProps = {};
 
@@ -17,6 +18,16 @@ export const Search: React.FC<SearchProps> = () => {
   useEffect(() => {
     dispatch(fetchSearchBooks({ title, page }));
   }, [title, dispatch, page]);
+
+  const status = useAppSelector(getStatus);
+  if (status === "loading") {
+    return <Spinner></Spinner>;
+  }
+
+  if (status === "error") {
+    return <Title>Oops, smth was wrong...</Title>;
+  }
+
   return (
     <div className={style.wrapper}>
       <Template>
