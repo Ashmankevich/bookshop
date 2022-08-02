@@ -1,5 +1,4 @@
 import { Title } from "../ui/title/Title";
-import { Template } from "../template/Template";
 import { Navigate, useNavigate } from "react-router-dom";
 import { BackIcon } from "../assets";
 import { ButtonBack } from "../ui/button/button-back/ButtonBack";
@@ -18,22 +17,20 @@ export const ShoppingCart: React.FC<ShoppingCartProps> = () => {
 
   return isAuth ? (
     <>
-      <Template>
-        <ButtonBack onClick={buttonBack}>
-          <BackIcon></BackIcon>
-        </ButtonBack>
-        <Title>
-          <p
-            style={{
-              margin: "0",
-              paddingTop: "10px",
-            }}
-          >
-            Your Cart
-          </p>
-        </Title>
-        <Cart></Cart>
-      </Template>
+      <ButtonBack onClick={buttonBack}>
+        <BackIcon></BackIcon>
+      </ButtonBack>
+      <Title>
+        <p
+          style={{
+            margin: "0",
+            paddingTop: "10px",
+          }}
+        >
+          Your Cart
+        </p>
+      </Title>
+      <Cart></Cart>
     </>
   ) : (
     <Navigate to={AppPages.SIGN_IN} />

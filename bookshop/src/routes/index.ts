@@ -6,4 +6,5 @@ export enum AppPages {
   SIGN_IN = "/bookshop/sign-in",
   SIGN_UP = "/bookshop/sign-up",
   SHOPPING_CART = "/bookshop/shopping-cart",
+  NOT_FOUND_PAGE = "*",
 }

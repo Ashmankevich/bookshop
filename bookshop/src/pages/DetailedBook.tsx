@@ -1,4 +1,3 @@
-import { Template } from "../template/Template";
 import { Subscribe } from "../ui/subscribe/Subscribe";
 import { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../store/hooks";
@@ -39,13 +38,11 @@ export const DetailedBook: React.FC<DetailedBookProps> = () => {
 
   return (
     <>
-      <Template>
-        <ButtonBack onClick={buttonBack}>
-          <BackIcon></BackIcon>
-        </ButtonBack>
-        <BookDetails book={result}></BookDetails>
-        <Subscribe></Subscribe>
-      </Template>
+      <ButtonBack onClick={buttonBack}>
+        <BackIcon></BackIcon>
+      </ButtonBack>
+      <BookDetails book={result}></BookDetails>
+      <Subscribe></Subscribe>
     </>
   );
 };

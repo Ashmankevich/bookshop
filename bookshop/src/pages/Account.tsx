@@ -1,5 +1,4 @@
 import { Title } from "../ui/title/Title";
-import { Template } from "../template/Template";
 import { Link, Navigate } from "react-router-dom";
 import { AppPages } from "../routes";
 import { useAppDispatch } from "../store/hooks";
@@ -15,38 +14,36 @@ export const Account: React.FC<AccountProps> = () => {
 
   return isAuth ? (
     <>
-      <Template>
-        <Title>Account</Title>
-        <button
-          style={{
-            maxWidth: "350px",
-            width: "100%",
-            marginBottom: "50px",
-            fontSize: "16px",
-            border: "none",
-            cursor: "pointer",
-            padding: "14px",
-            color: "white",
-            backgroundColor: "#5b5a62",
-          }}
-          onClick={() => dispatch(removeUser())}
-        >
-          Log out from {email}
-        </button>
-        <Link
-          style={{
-            textDecoration: "none",
-            cursor: "pointer",
-            display: "block",
-            marginBottom: "50px",
-            fontSize: "16px",
-            color: "#5b5a62",
-          }}
-          to={AppPages.HOME}
-        >
-          Jump to Main
-        </Link>
-      </Template>
+      <Title>Account</Title>
+      <button
+        style={{
+          maxWidth: "350px",
+          width: "100%",
+          marginBottom: "50px",
+          fontSize: "16px",
+          border: "none",
+          cursor: "pointer",
+          padding: "14px",
+          color: "white",
+          backgroundColor: "#5b5a62",
+        }}
+        onClick={() => dispatch(removeUser())}
+      >
+        Log out from {email}
+      </button>
+      <Link
+        style={{
+          textDecoration: "none",
+          cursor: "pointer",
+          display: "block",
+          marginBottom: "50px",
+          fontSize: "16px",
+          color: "#5b5a62",
+        }}
+        to={AppPages.HOME}
+      >
+        Jump to Main
+      </Link>
     </>
   ) : (
     <Navigate to={AppPages.SIGN_IN} />

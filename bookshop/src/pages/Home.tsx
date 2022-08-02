@@ -1,5 +1,4 @@
 import { Title } from "../ui/title/Title";
-import { Template } from "../template/Template";
 import { Subscribe } from "../ui/subscribe/Subscribe";
 import { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../store/hooks";
@@ -28,11 +27,9 @@ export const Home: React.FC<HomeProps> = () => {
 
   return (
     <>
-      <Template>
-        <Title>New Stuff</Title>
-        <BookList books={books}></BookList>
-        <Subscribe></Subscribe>
-      </Template>
+      <Title>New Stuff</Title>
+      <BookList books={books}></BookList>
+      <Subscribe></Subscribe>
     </>
   );
 };

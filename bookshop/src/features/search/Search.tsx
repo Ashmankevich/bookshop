@@ -1,6 +1,5 @@
 import style from "./Search.module.css";
 import { Title } from "../../ui/title/Title";
-import { Template } from "../../template/Template";
 import { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { getBooks, getStatus } from "../../store/selectors";
@@ -30,10 +29,8 @@ export const Search: React.FC<SearchProps> = () => {
 
   return (
     <div className={style.wrapper}>
-      <Template>
-        <Title className={style.title}>"{title}" : search result</Title>
-        <BookList books={books ? books : []}></BookList>
-      </Template>
+      <Title className={style.title}>"{title}" : search result</Title>
+      <BookList books={books ? books : []}></BookList>
     </div>
   );
 };
