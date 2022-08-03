@@ -1,11 +1,11 @@
-import { Title } from "../ui/title/Title";
-import { Subscribe } from "../ui/subscribe/Subscribe";
+import { Title } from "../../ui/title/Title";
+import { Subscribe } from "../../ui/subscribe/Subscribe";
 import { useEffect } from "react";
-import { useAppDispatch, useAppSelector } from "../store/hooks";
-import { getBooks, getStatus } from "../store/selectors";
-import { fetchBook } from "../store/slices/bookSlice";
-import { BookList } from "../ui/books/book-list/BookList";
-import { Spinner } from "../ui/spinner/Spinner";
+import { useAppDispatch, useAppSelector } from "../../store/hooks";
+import { getBooks, getStatus } from "../../store/selectors";
+import { fetchBook } from "../../store/slices/bookSlice";
+import { BookList } from "../../ui/books/book-list/BookList";
+import { Spinner } from "../../ui/spinner/Spinner";
 
 type HomeProps = {};
 

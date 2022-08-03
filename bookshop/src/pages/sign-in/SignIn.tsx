@@ -1,4 +1,4 @@
-import { Login } from "../features/auth/login/Login";
+import { Login } from "../../features/auth/login/Login";
 
 type SignInProps = {};
 

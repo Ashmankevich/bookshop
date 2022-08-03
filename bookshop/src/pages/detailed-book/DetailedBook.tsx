@@ -1,14 +1,14 @@
-import { Subscribe } from "../ui/subscribe/Subscribe";
+import { Subscribe } from "../../ui/subscribe/Subscribe";
 import { useEffect } from "react";
-import { useAppDispatch, useAppSelector } from "../store/hooks";
-import { getBooks, getStatus } from "../store/selectors";
-import { fetchBookDetails } from "../store/slices/bookSlice";
-import { BookDetails } from "../ui/books/book-details/BookDetails";
-import { ButtonBack } from "../ui/button/button-back/ButtonBack";
+import { useAppDispatch, useAppSelector } from "../../store/hooks";
+import { getBooks, getStatus } from "../../store/selectors";
+import { fetchBookDetails } from "../../store/slices/bookSlice";
+import { BookDetails } from "../../ui/books/book-details/BookDetails";
+import { ButtonBack } from "../../ui/button/button-back/ButtonBack";
 import { useNavigate, useParams } from "react-router-dom";
-import { BackIcon } from "../assets";
-import { Spinner } from "../ui/spinner/Spinner";
-import { Title } from "../ui/title/Title";
+import { BackIcon } from "../../assets";
+import { Spinner } from "../../ui/spinner/Spinner";
+import { Title } from "../../ui/title/Title";
 
 type DetailedBookProps = {};
 

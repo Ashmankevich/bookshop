@@ -1,10 +1,11 @@
-import { Title } from "../ui/title/Title";
+import { Title } from "../../ui/title/Title";
 import { Navigate, useNavigate } from "react-router-dom";
-import { BackIcon } from "../assets";
-import { ButtonBack } from "../ui/button/button-back/ButtonBack";
-import { Cart } from "../features/cart/Cart";
-import { AppPages } from "../router-routes/routes";
-import { useAuth } from "../store/hooks";
+import { BackIcon } from "../../assets";
+import { ButtonBack } from "../../ui/button/button-back/ButtonBack";
+import { Cart } from "../../features/cart/Cart";
+import { AppPages } from "../../router-routes/routes";
+import { useAuth } from "../../store/hooks";
+import style from "./ShoppingCart.module.css";
 
 type ShoppingCartProps = {};
 
@@ -20,16 +21,7 @@ export const ShoppingCart: React.FC<ShoppingCartProps> = () => {
       <ButtonBack onClick={buttonBack}>
         <BackIcon></BackIcon>
       </ButtonBack>
-      <Title>
-        <p
-          style={{
-            margin: "0",
-            paddingTop: "10px",
-          }}
-        >
-          Your Cart
-        </p>
-      </Title>
+      <Title className={style.title}>Your Cart</Title>
       <Cart></Cart>
     </>
   ) : (

@@ -1,0 +1,18 @@
+.button {
+   max-width: 350px;
+   width: 100%;
+   margin-bottom: 50px;
+   font-size: 16px;
+   font-weight: 400;
+   text-transform: lowercase;
+   background-color: #5b5a62;
+}
+
+.link {
+   text-decoration: none;
+   cursor: pointer;
+   display: block;
+   margin-bottom: 50px;
+   font-size: 16px;
+   color: #5b5a62;
+}

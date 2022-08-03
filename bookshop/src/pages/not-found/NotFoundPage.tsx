@@ -1,4 +1,4 @@
-import { Title } from "../ui/title/Title";
+import { Title } from "../../ui/title/Title";
 
 type NotFoudPageProps = {};
 
