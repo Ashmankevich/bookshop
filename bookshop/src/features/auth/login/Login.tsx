@@ -2,7 +2,7 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import style from "./Login.module.css";
 import { setUser } from "../../../store/slices/userSlice";
 import { useAppDispatch } from "../../../store/hooks";
-import { AppPages } from "../../../routes";
+import { AppPages } from "../../../router-routes/routes";
 import { useNavigate } from "react-router-dom";
 import { FormLogin } from "../form-login/FormLogin";
 import { useState } from "react";

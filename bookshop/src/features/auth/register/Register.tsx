@@ -4,7 +4,7 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { FormRegister } from "../form-register/FormRegister";
 import { setUser } from "../../../store/slices/userSlice";
 import { useAppDispatch } from "../../../store/hooks";
-import { AppPages } from "../../../routes";
+import { AppPages } from "../../../router-routes/routes";
 import { useState } from "react";
 
 export const Register = () => {

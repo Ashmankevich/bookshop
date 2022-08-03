@@ -1,6 +1,6 @@
 import { Title } from "../ui/title/Title";
 import { Link, Navigate } from "react-router-dom";
-import { AppPages } from "../routes";
+import { AppPages } from "../router-routes/routes";
 import { useAppDispatch } from "../store/hooks";
 import { useAuth } from "../store/hooks";
 import { removeUser } from "../store/slices/userSlice";

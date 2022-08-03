@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { AppPages } from "../../../routes";
+import { AppPages } from "../../../router-routes/routes";
 import { ButtonPrimary } from "../../../ui/button/button-primary/ButtonPrimary";
 import style from "./FormLogin.module.css";
 

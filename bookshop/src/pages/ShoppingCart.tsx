@@ -3,7 +3,7 @@ import { Navigate, useNavigate } from "react-router-dom";
 import { BackIcon } from "../assets";
 import { ButtonBack } from "../ui/button/button-back/ButtonBack";
 import { Cart } from "../features/cart/Cart";
-import { AppPages } from "../routes";
+import { AppPages } from "../router-routes/routes";
 import { useAuth } from "../store/hooks";
 
 type ShoppingCartProps = {};
