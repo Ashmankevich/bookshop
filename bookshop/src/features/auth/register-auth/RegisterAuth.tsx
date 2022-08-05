@@ -1,13 +1,13 @@
 import { useNavigate } from "react-router-dom";
-import style from "./Register.module.css";
+import style from "./RegisterAuth.module.css";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import { FormRegister } from "../form-register/FormRegister";
 import { setUser } from "../../../store/slices/userSlice";
 import { useAppDispatch } from "../../../store/hooks";
 import { AppPages } from "../../../router-routes/routes";
 import { useState } from "react";
+import { FormAuth } from "../form-auth/FormAuth";
 
-export const Register = () => {
+export const RegisterAuth = () => {
   const dispatch = useAppDispatch();
   const [isSignUpError, setIsSignUpError] = useState(false);
   const navigate = useNavigate();
@@ -32,7 +32,7 @@ export const Register = () => {
 
   return (
     <div className={style.wrapper}>
-      <FormRegister title="Sign Up" handleClick={handleRegister} />
+      <FormAuth title="Sign Up" handleClick={handleRegister} />
       <div className={style.containerText}>
         {isSignUpError ? (
           <p>Wrong data... Please, check your email or password</p>

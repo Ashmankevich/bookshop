@@ -1,13 +1,13 @@
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import style from "./Login.module.css";
+import style from "./LoginAuth.module.css";
 import { setUser } from "../../../store/slices/userSlice";
 import { useAppDispatch } from "../../../store/hooks";
 import { AppPages } from "../../../router-routes/routes";
 import { useNavigate } from "react-router-dom";
-import { FormLogin } from "../form-login/FormLogin";
+import { FormAuth } from "../form-auth/FormAuth";
 import { useState } from "react";
 
-export const Login = () => {
+export const LoginAuth = () => {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
   const [isSignInError, setIsSignInError] = useState(false);
@@ -31,7 +31,7 @@ export const Login = () => {
 
   return (
     <div className={style.wrapper}>
-      <FormLogin title="Sign In" handleClick={handleLogin} />
+      <FormAuth title="Sign In" handleClick={handleLogin} />
       <div className={style.containerText}>
         {isSignInError ? (
           <p>Something was wrong... Please, check your email or password</p>

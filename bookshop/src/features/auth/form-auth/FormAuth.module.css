@@ -30,25 +30,10 @@
    justify-content: space-around;
 }
 
+.register,
 .login {
    color: #a8a8a8;
    text-decoration: none;
-}
-
-.register {
-   color: #313037;
-   text-decoration: none;
-   position: relative;
-}
-
-.register:after {
-   content: " ";
-   display: block;
-   border-bottom: 2px solid #313037;
-   width: 239px;
-   position: absolute;
-   top: 157%;
-   right: -68%;
 }
 
 .login:hover,
@@ -81,13 +66,11 @@
       padding: 0;
       margin-bottom: 40px;
    }
-
    .input {
       width: 232px;
    }
-
-   .register:after {
+   .login:after {
       width: 124px;
-      right: -16%;
+      left: -10%;
    }
 }

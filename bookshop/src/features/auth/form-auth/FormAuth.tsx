@@ -2,15 +2,15 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { AppPages } from "../../../router-routes/routes";
 import { ButtonPrimary } from "../../../ui/button/button-primary/ButtonPrimary";
-import style from "./FormRegister.module.css";
+import style from "./FormAuth.module.css";
 
-type FormRegisterProps = {
+type FormAuthProps = {
   className?: string;
   title: string;
   handleClick: (email: string, password: string) => void;
 };
 
-export const FormRegister: React.FC<FormRegisterProps> = ({
+export const FormAuth: React.FC<FormAuthProps> = ({
   title,
   handleClick,
   className = "",

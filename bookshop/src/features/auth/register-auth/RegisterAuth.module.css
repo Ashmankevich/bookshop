@@ -3,6 +3,16 @@
    position: relative;
 }
 
+.wrapper:after {
+   content: " ";
+   display: block;
+   border-bottom: 2px solid #313037;
+   width: 239px;
+   position: absolute;
+   top: 17.2%;
+   right: 27.1%;
+}
+
 .containerText {
    position: absolute;
    top: 68%;
