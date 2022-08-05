@@ -15,6 +15,10 @@ At the moment this is the MVP of my project which called 'bookshop', you can che
    ```sh
    npm install
    ```
+3. Run app
+   ```sh
+   npm start
+   ```
 
 ### Tools and Pachages
 
