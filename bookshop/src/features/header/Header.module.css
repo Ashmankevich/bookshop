@@ -29,6 +29,87 @@
    box-shadow: 4px 4px 30px white;
 }
 
+.row {
+   position: absolute;
+   top: 100%;
+   z-index: 3;
+   width: 540px;
+   border: 1px solid rgb(231, 231, 231);
+   background-color: white;
+}
+
+.container {
+   position: relative;
+   height: 390px;
+   overflow: auto;
+}
+
+.container::-webkit-scrollbar {
+   width: 6px;
+   height: 6px;
+}
+
+.container::-webkit-scrollbar-track {
+   background-color: white;
+}
+
+.container::-webkit-scrollbar-thumb {
+   background-color: rgba(138, 116, 116, 0.6);
+}
+
+.items {
+   display: flex;
+   justify-content: left;
+   align-items: center;
+   height: 100px;
+   width: 100%;
+   border-bottom: 1px solid rgb(231, 231, 231);
+   transition: all 0.3s ease-in-out;
+}
+
+.items:hover {
+   background-color: #f4eefd;
+}
+
+.img {
+   height: 90px;
+   margin-right: 20px;
+}
+
+.text {
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 20px;
+   color: rgb(49, 48, 55);
+}
+
+.btn {
+   position: absolute;
+   width: 100%;
+   z-index: 2;
+   font-size: 24px;
+   font-weight: 700;
+   letter-spacing: 0.05em;
+   text-transform: uppercase;
+   padding: 14px 0;
+   text-align: center;
+   border-top: 1px solid rgb(231, 231, 231);
+   color: white;
+   background-color: #313037;
+   cursor: pointer;
+   border: none;
+}
+
+.btn:hover {
+   background-color: #5b5a62;
+   box-shadow: 4px 4px 30px #5b5a62;
+}
+
+.btn:active {
+   background-color: #313037;
+   box-shadow: 4px 4px 30px #5b5a62;
+}
+
 .nav {
    display: flex;
    justify-content: space-between;
