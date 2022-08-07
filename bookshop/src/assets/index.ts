@@ -6,6 +6,8 @@ import { ReactComponent as AddItemIcon } from "./icons/addItem.svg";
 import { ReactComponent as NotificationIcon } from "./icons/notification.svg";
 import { ReactComponent as RemoveIcon } from "./icons/remove.svg";
 import { ReactComponent as DeleteIcon } from "./icons/delete.svg";
+import { ReactComponent as LeftIcon } from "./icons/arrowLeft.svg";
+import { ReactComponent as RightIcon } from "./icons/arrowRight.svg";
 
 export {
   AddItemIcon,
@@ -16,4 +18,6 @@ export {
   UserIcon,
   RemoveIcon,
   ShoppingIcon,
+  LeftIcon,
+  RightIcon,
 };

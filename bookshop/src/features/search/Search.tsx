@@ -7,6 +7,7 @@ import { BookList } from "../../ui/books/book-list/BookList";
 import { useParams } from "react-router-dom";
 import { fetchSearchBooks } from "../../store/slices/bookSlice";
 import { Spinner } from "../../ui/spinner/Spinner";
+import { Pagination } from "../../ui/pagination/Pagination";
 
 type SearchProps = {};
 
@@ -31,6 +32,7 @@ export const Search: React.FC<SearchProps> = () => {
     <div className={style.wrapper}>
       <Title className={style.title}>"{title}" : search result</Title>
       <BookList books={books ? books : []}></BookList>
+      <Pagination></Pagination>
     </div>
   );
 };
