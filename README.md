@@ -29,9 +29,10 @@ At the moment this is the MVP of my project which called 'bookshop', you can che
 5. [React Router Dom](https://www.npmjs.com/package/react-router-dom)
 6. [React Hook Form](https://react-hook-form.com/)
 7. [React Outside Click Handler](https://www.npmjs.com/package/react-outside-click-handler)
-8. [gh-pages](https://www.npmjs.com/package/gh-pages)
-9. [Firebase](https://firebase.google.com/)
-10. [Axios](https://axios-http.com/docs/intro)
-11. [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
+8. [React Loader Spinner](https://www.npmjs.com/package/react-loader-spinner)
+9. [gh-pages](https://www.npmjs.com/package/gh-pages)
+10. [Firebase](https://firebase.google.com/)
+11. [Axios](https://axios-http.com/docs/intro)
+12. [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
