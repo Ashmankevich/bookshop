@@ -28,6 +28,7 @@ export const Home: React.FC<HomeProps> = () => {
   return (
     <>
       <Title>New Stuff</Title>
+      <Carousel books={books}></Carousel>
       <BookList books={books}></BookList>
       <Subscribe></Subscribe>
     </>
