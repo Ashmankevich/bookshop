@@ -6,6 +6,7 @@ import { getBooks, getStatus } from "../../store/selectors";
 import { fetchBook } from "../../store/slices/bookSlice";
 import { BookList } from "../../ui/books/book-list/BookList";
 import { Spinner } from "../../ui/spinner/Spinner";
+import { Carousel } from "../../ui/slider/Slider";
 type HomeProps = {};
 
 export const Home: React.FC<HomeProps> = () => {
