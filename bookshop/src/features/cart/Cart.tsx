@@ -47,7 +47,7 @@ export const Cart: React.FC<CartProps> = () => {
               <div className={style.container}>
                 <Link
                   className={style.link}
-                  to={`/bookshop/books/${book.isbn13}`}
+                  to={`/bookshop/detailed-book/${book.isbn13}`}
                 >
                   <img
                     className={style.pic}

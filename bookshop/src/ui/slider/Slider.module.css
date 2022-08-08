@@ -1,27 +1,49 @@
 .title {
+   margin-left: 10px;
    font-size: 24px;
 }
 
-.SlideContainer {
+.slider {
+   margin-bottom: 100px;
+}
+
+.wrapper {
    margin-bottom: 80px;
 }
 
-.StyledLink {
-   display: flex;
-   flex-direction: column;
+.link {
    text-decoration: none;
 }
 
-.CustomSlide {
+.slide {
    display: flex;
    justify-content: center;
    flex-direction: column;
+   background-color: #d7e4fd;
    max-width: 352px;
    width: 100%;
    margin: 10px auto 0;
-   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
    border-radius: 20px;
    cursor: pointer;
+}
+
+.wrapperPic {
+   position: relative;
+   margin-bottom: 10px;
+}
+
+.wrapperPic:before {
+   content: "";
+   display: block;
+   padding-bottom: 60%;
+}
+
+.bookPic {
+   width: 60%;
+   height: 100%;
+   position: absolute;
+   top: 10px;
+   left: -20px;
 }
 
 .SliderTitle {
@@ -30,9 +52,9 @@
    text-overflow: ellipsis;
    overflow: hidden;
    height: 60px;
-   font-size: 24px;
+   font-size: 16px;
    font-weight: 700;
-   line-height: 32px;
+   line-height: 24px;
    color: #313037;
 }
 
