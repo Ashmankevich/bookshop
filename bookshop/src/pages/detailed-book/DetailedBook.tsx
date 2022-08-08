@@ -9,12 +9,14 @@ import { useNavigate, useParams } from "react-router-dom";
 import { BackIcon } from "../../assets";
 import { Spinner } from "../../ui/spinner/Spinner";
 import { Title } from "../../ui/title/Title";
+import { Carousel } from "../../ui/slider/Slider";
 
 type DetailedBookProps = {};
 
 export const DetailedBook: React.FC<DetailedBookProps> = () => {
   const { id = "" } = useParams();
   const { result } = useAppSelector(getBooks);
+  const { books } = useAppSelector(getBooks);
   const dispatch = useAppDispatch();
 
   useEffect(() => {
@@ -42,6 +44,7 @@ export const DetailedBook: React.FC<DetailedBookProps> = () => {
         <BackIcon></BackIcon>
       </ButtonBack>
       <BookDetails book={result}></BookDetails>
+      <Carousel books={books}></Carousel>
       <Subscribe></Subscribe>
     </>
   );

@@ -1,4 +1,6 @@
 import style from "./Slider.module.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { Title } from "../title/Title";
 import { Link } from "react-router-dom";
@@ -10,11 +12,14 @@ type CarouselProps = {
 
 export const Carousel: React.FC<CarouselProps> = ({ books }) => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    pauseOnHover: true,
   };
   return (
     <>
