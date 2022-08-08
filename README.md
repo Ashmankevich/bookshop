@@ -30,9 +30,11 @@ At the moment this is the MVP of my project which called 'bookshop', you can che
 6. [React Hook Form](https://react-hook-form.com/)
 7. [React Outside Click Handler](https://www.npmjs.com/package/react-outside-click-handler)
 8. [React Loader Spinner](https://www.npmjs.com/package/react-loader-spinner)
-9. [gh-pages](https://www.npmjs.com/package/gh-pages)
-10. [Firebase](https://firebase.google.com/)
-11. [Axios](https://axios-http.com/docs/intro)
-12. [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
+9. [React Slick](https://www.npmjs.com/package/react-slick)
+10. [React Slick Carousel](https://www.npmjs.com/package/slick-carousel)
+11. [gh-pages](https://www.npmjs.com/package/gh-pages)
+12. [Firebase](https://firebase.google.com/)
+13. [Axios](https://axios-http.com/docs/intro)
+14. [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
