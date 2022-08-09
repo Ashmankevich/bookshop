@@ -3,6 +3,7 @@ import { Search } from "../features/search/Search";
 import { Layout } from "../layout/Layout";
 import { Account } from "../pages/account/Account";
 import { DetailedBook } from "../pages/detailed-book/DetailedBook";
+import { Favourite } from "../pages/favourite/Favourite";
 import { Home } from "../pages/home/Home";
 import { NotFoundPage } from "../pages/not-found/NotFoundPage";
 import { ShoppingCart } from "../pages/shopping-cart/ShoppingCart";
@@ -17,6 +18,7 @@ export const Router = () => {
         <Route index element={<Home />} />
         <Route path={AppPages.ACCOUNT} element={<Account />} />
         <Route path={AppPages.DETAILED_BOOK} element={<DetailedBook />} />
+        <Route path={AppPages.FAVOURITE} element={<Favourite />} />
         <Route path={AppPages.SEARCH} element={<Search />} />
         <Route path={AppPages.SIGN_IN} element={<SignIn />} />
         <Route path={AppPages.SIGN_UP} element={<SignUp />} />
