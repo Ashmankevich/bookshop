@@ -113,7 +113,7 @@
 .nav {
    display: flex;
    justify-content: space-between;
-   max-width: 70px;
+   max-width: 100px;
    width: 100%;
 }
 

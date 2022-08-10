@@ -2,6 +2,7 @@ import style from "./Header.module.css";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import {
+  FavouriteIcon,
   NotificationIcon,
   SearchIcon,
   ShoppingIcon,
@@ -105,6 +106,9 @@ export const Header: React.FC = () => {
           ) : (
             <div></div>
           )}
+        </Link>
+        <Link to={AppPages.FAVOURITE}>
+          <FavouriteIcon></FavouriteIcon>
         </Link>
         <Link to={AppPages.ACCOUNT}>
           <UserIcon></UserIcon>
