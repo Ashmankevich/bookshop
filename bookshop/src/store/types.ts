@@ -96,3 +96,7 @@ export type GetBookDetailsApi = {
     [key: string]: string;
   };
 };
+
+export type Fav = {
+  fav: Book[];
+};

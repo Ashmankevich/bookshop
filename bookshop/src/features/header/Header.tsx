@@ -9,7 +9,7 @@ import {
   UserIcon,
 } from "../../assets";
 import { useAppSelector } from "../../store/hooks";
-import { getCartInfo } from "../../store/selectors";
+import { getCartInfo, getFav } from "../../store/selectors";
 import { AppPages } from "../../router-routes/routes";
 import { ButtonPrimary } from "../../ui/button/button-primary/ButtonPrimary";
 import { ChangeEvent, useEffect, useState } from "react";
@@ -20,6 +20,7 @@ import OutsideClickHandler from "react-outside-click-handler";
 export const Header: React.FC = () => {
   const { register, handleSubmit } = useForm();
   const { cart } = useAppSelector(getCartInfo);
+  const { fav } = useAppSelector(getFav);
   const navigate = useNavigate();
   const [title, setTitle] = useState("");
 
@@ -109,6 +110,13 @@ export const Header: React.FC = () => {
         </Link>
         <Link to={AppPages.FAVOURITE}>
           <FavouriteIcon></FavouriteIcon>
+          {fav.length !== 0 ? (
+            <div className={style.notificationContainer}>
+              <NotificationIcon className={style.pic}></NotificationIcon>
+            </div>
+          ) : (
+            <div></div>
+          )}
         </Link>
         <Link to={AppPages.ACCOUNT}>
           <UserIcon></UserIcon>
