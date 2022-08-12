@@ -3,7 +3,6 @@ import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import {
   FavouriteIcon,
-  NotificationIcon,
   SearchIcon,
   ShoppingIcon,
   UserIcon,
@@ -101,9 +100,7 @@ export const Header: React.FC = () => {
         <Link to={AppPages.SHOPPING_CART}>
           <ShoppingIcon></ShoppingIcon>
           {cart.length !== 0 ? (
-            <div className={style.notificationContainer}>
-              <NotificationIcon className={style.pic}></NotificationIcon>
-            </div>
+            <div className={style.notificationContainer}></div>
           ) : (
             <div></div>
           )}
@@ -111,9 +108,7 @@ export const Header: React.FC = () => {
         <Link to={AppPages.FAVOURITE}>
           <FavouriteIcon></FavouriteIcon>
           {fav.length !== 0 ? (
-            <div className={style.notificationContainer}>
-              <NotificationIcon className={style.pic}></NotificationIcon>
-            </div>
+            <div className={style.notificationContainer}></div>
           ) : (
             <div></div>
           )}

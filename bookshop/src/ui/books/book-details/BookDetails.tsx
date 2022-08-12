@@ -1,9 +1,11 @@
 import style from "./BookDetails.module.css";
 import { ButtonPrimary } from "../../button/button-primary/ButtonPrimary";
-import { GetBookDetailsApi } from "../../../store/types";
+import { Book, GetBookDetailsApi } from "../../../store/types";
 import { addCart } from "../../../store/slices/cartSlice";
 import { useAppDispatch } from "../../../store/hooks";
 import { Title } from "../../title/Title";
+import { FavouritePreHoverIcon } from "../../../assets";
+import { addFav } from "../../../store/slices/favSlice";
 
 type BookDetailsProps = {
   book: GetBookDetailsApi;
@@ -11,6 +13,9 @@ type BookDetailsProps = {
 
 export const BookDetails: React.FC<BookDetailsProps> = ({ book }) => {
   const dispatch = useAppDispatch();
+  const handleFav = (book: Book) => {
+    dispatch(addFav(book));
+  };
   const Cart = (book: GetBookDetailsApi) => {
     dispatch(addCart({ ...book, amount: 1 }));
   };
@@ -19,6 +24,13 @@ export const BookDetails: React.FC<BookDetailsProps> = ({ book }) => {
       <Title className={style.bookTitle}>{book.title}</Title>
       <div className={style.wrapperBook} key={book.isbn13}>
         <div className={style.containerPic}>
+          <ButtonPrimary
+            className={style.buttonFav}
+            type="button"
+            onClick={() => handleFav(book)}
+          >
+            <FavouritePreHoverIcon></FavouritePreHoverIcon>
+          </ButtonPrimary>
           <img className={style.pic} src={book.image} alt="" />
         </div>
         <div className={style.containerBook}>

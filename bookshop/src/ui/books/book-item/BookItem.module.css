@@ -63,6 +63,26 @@
    padding: 0 10px 10px;
 }
 
+.button {
+   position: absolute;
+   top: 0;
+   right: 15px;
+   padding: 14px 12px;
+}
+
+.button:hover,
+.button:active {
+   background-color: #313037;
+   box-shadow: none;
+}
+
+.button:hover svg,
+.button:active svg {
+   background-color: #313037;
+   box-shadow: none;
+   fill: #fc857f;
+}
+
 @media (min-width: 569px) and (max-width: 1140px) {
    .wrapper {
       max-width: 328px;
