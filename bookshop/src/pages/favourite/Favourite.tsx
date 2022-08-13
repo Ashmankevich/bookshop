@@ -5,7 +5,7 @@ import { BackIcon } from "../../assets";
 import { ButtonBack } from "../../ui/button/button-back/ButtonBack";
 import { AppPages } from "../../router-routes/routes";
 import { useAuth } from "../../store/hooks";
-import { FavouriteList } from "../../features/favourite/FavouriteList";
+import { FavouriteList } from "../../features/favouriteList/FavouriteList";
 
 type FavouriteProps = {};
 

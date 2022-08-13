@@ -1,0 +1,80 @@
+.wrapper {
+   display: flex;
+   flex-direction: column;
+}
+
+.container {
+   position: relative;
+   margin-bottom: 20px;
+}
+
+.link {
+   display: flex;
+   margin-bottom: 20px;
+   text-decoration: none;
+}
+
+.pic {
+   background-color: #d7e4fd;
+   max-width: 226px;
+   width: 100%;
+   margin: 0 63px 20px;
+}
+
+.row {
+   display: flex;
+   flex-direction: column;
+   max-width: 450px;
+   width: 100%;
+}
+
+.title {
+   color: #313037;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 32px;
+   margin: 0;
+   padding: 0 10px;
+}
+
+.subtitle {
+   color: #a8a8a8;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 24px;
+   margin-bottom: 15px;
+   padding: 0 10px;
+}
+
+.price {
+   color: #313037;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 32px;
+   font-size: 35px;
+   align-content: flex-end;
+   margin: auto 0 20px;
+   padding-left: 10px;
+}
+
+.removeBtn {
+   position: absolute;
+   right: 100px;
+   top: 70px;
+   background-color: white;
+}
+
+.removeBtn:hover,
+.removeBtn:active {
+   background-color: white;
+   box-shadow: none;
+}
+
+.removeBtn svg {
+   fill: #fc857f;
+}
+
+.removeBtn svg:hover,
+.removeBtn svg:active {
+   fill: white;
+}

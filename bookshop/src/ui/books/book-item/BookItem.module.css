@@ -63,21 +63,21 @@
    padding: 0 10px 10px;
 }
 
-.button {
+.buttonFav {
    position: absolute;
    top: 0;
    right: 15px;
    padding: 14px 12px;
 }
 
-.button:hover,
-.button:active {
+.buttonFav:hover,
+.buttonFav:active {
    background-color: #313037;
    box-shadow: none;
 }
 
-.button:hover svg,
-.button:active svg {
+.buttonFav:hover svg,
+.buttonFav:active svg {
    background-color: #313037;
    box-shadow: none;
    fill: #fc857f;

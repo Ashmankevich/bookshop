@@ -19,7 +19,7 @@ export const BookItem: React.FC<BookItemProps> = ({ book }) => {
   return (
     <div className={style.wrapper} key={book.isbn13}>
       <ButtonPrimary
-        className={style.button}
+        className={style.buttonFav}
         type="button"
         onClick={() => handleFav(book)}
       >
