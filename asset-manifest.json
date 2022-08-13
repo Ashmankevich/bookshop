@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bookshop/static/css/main.8761cfd7.css",
-    "main.js": "/bookshop/static/js/main.1c13b076.js",
+    "main.css": "/bookshop/static/css/main.2a023d16.css",
+    "main.js": "/bookshop/static/js/main.5d5452c4.js",
     "static/js/787.adef61cf.chunk.js": "/bookshop/static/js/787.adef61cf.chunk.js",
     "static/media/slick.svg": "/bookshop/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/bookshop/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -9,6 +9,9 @@
     "static/media/slick.woff": "/bookshop/static/media/slick.295183786cd8a1389865.woff",
     "static/media/back.svg": "/bookshop/static/media/back.cfb3190c5eda02964eb88c799f100638.svg",
     "static/media/arrowRight.svg": "/bookshop/static/media/arrowRight.51c65c8c1124838e24151f2435ee0960.svg",
+    "static/media/favPreHover.svg": "/bookshop/static/media/favPreHover.1eccbd1d12e5a1d7c5432a1c419306ff.svg",
+    "static/media/fav.svg": "/bookshop/static/media/fav.28220c581538742fc7469c10d8a9e269.svg",
+    "static/media/favActive.svg": "/bookshop/static/media/favActive.82e958b37372985dfdcd3027f15bd670.svg",
     "static/media/arrowLeft.svg": "/bookshop/static/media/arrowLeft.5fd96aa734d38c4adfd424db166219c1.svg",
     "static/media/delete.svg": "/bookshop/static/media/delete.49bbafc3c74c2907de85d95c687c1030.svg",
     "static/media/shopping.svg": "/bookshop/static/media/shopping.291776166f59fef865d350aaa5d72385.svg",
@@ -16,14 +19,13 @@
     "static/media/user.svg": "/bookshop/static/media/user.f95ce053779a6201d74bbfa54c39de4c.svg",
     "static/media/addItem.svg": "/bookshop/static/media/addItem.204449cae44eaad0b297e2752c973f63.svg",
     "index.html": "/bookshop/index.html",
-    "static/media/notification.svg": "/bookshop/static/media/notification.66ea1c5f085759594681dee1bfbc508e.svg",
     "static/media/remove.svg": "/bookshop/static/media/remove.1d66b739016534ac006083b9dba39a0e.svg",
-    "main.8761cfd7.css.map": "/bookshop/static/css/main.8761cfd7.css.map",
-    "main.1c13b076.js.map": "/bookshop/static/js/main.1c13b076.js.map",
+    "main.2a023d16.css.map": "/bookshop/static/css/main.2a023d16.css.map",
+    "main.5d5452c4.js.map": "/bookshop/static/js/main.5d5452c4.js.map",
     "787.adef61cf.chunk.js.map": "/bookshop/static/js/787.adef61cf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8761cfd7.css",
-    "static/js/main.1c13b076.js"
+    "static/css/main.2a023d16.css",
+    "static/js/main.5d5452c4.js"
   ]
 }
