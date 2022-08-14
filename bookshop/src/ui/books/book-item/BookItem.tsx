@@ -23,7 +23,7 @@ export const BookItem: React.FC<BookItemProps> = ({ book }) => {
         type="button"
         onClick={() => handleFav(book)}
       >
-        <FavouritePreHoverIcon></FavouritePreHoverIcon>
+        <FavouritePreHoverIcon />
       </ButtonPrimary>
       <Link
         className={style.link}

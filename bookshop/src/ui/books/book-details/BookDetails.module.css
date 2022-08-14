@@ -110,6 +110,10 @@
    box-shadow: none;
 }
 
+.buttonFav svg {
+   border: tomato;
+}
+
 .buttonFav:hover svg,
 .buttonFav:active svg {
    background-color: #313037;

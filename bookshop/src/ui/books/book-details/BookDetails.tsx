@@ -29,7 +29,7 @@ export const BookDetails: React.FC<BookDetailsProps> = ({ book }) => {
             type="button"
             onClick={() => handleFav(book)}
           >
-            <FavouritePreHoverIcon></FavouritePreHoverIcon>
+            <FavouritePreHoverIcon />
           </ButtonPrimary>
           <img className={style.pic} src={book.image} alt="" />
         </div>

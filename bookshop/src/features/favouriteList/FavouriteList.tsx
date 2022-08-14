@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FavouritePreHoverIcon } from "../../assets";
+import { FavouriteIcon } from "../../assets";
 import { useAppSelector, useAppDispatch } from "../../store/hooks";
 import { getFav } from "../../store/selectors";
 import { removeFav } from "../../store/slices/favSlice";
@@ -40,7 +40,7 @@ export const FavouriteList: React.FC<FavouriteListProps> = () => {
               type="button"
               onClick={() => handleRemoveFav(book)}
             >
-              <FavouritePreHoverIcon />
+              <FavouriteIcon />
             </ButtonPrimary>
           </div>
         );

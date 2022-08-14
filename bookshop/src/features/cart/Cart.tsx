@@ -10,7 +10,7 @@ import { BookCartApi } from "../../store/types";
 import { getCartInfo } from "../../store/selectors";
 import { Link } from "react-router-dom";
 import { ButtonPrimary } from "../../ui/button/button-primary/ButtonPrimary";
-import { AddItemIcon, DeleteIcon, RemoveIcon } from "../../assets";
+import { AddItemIcon, RemoveIcon } from "../../assets";
 
 type CartProps = {};
 
@@ -78,7 +78,10 @@ export const Cart: React.FC<CartProps> = () => {
                       )}`}
                 </p>
                 <ButtonPrimary className={style.buttonDelete}>
-                  <DeleteIcon onClick={() => DeleteCart(book)} />
+                  <span
+                    className={style.btnDelete}
+                    onClick={() => DeleteCart(book)}
+                  />
                 </ButtonPrimary>
               </div>
             </div>

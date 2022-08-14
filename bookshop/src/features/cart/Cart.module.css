@@ -81,6 +81,7 @@
    margin: 5px 10px 0 10px;
    background-color: white;
    box-shadow: none;
+   position: relative;
 }
 
 .button:hover,
@@ -100,8 +101,27 @@ button:active {
    box-shadow: none;
 }
 
-.buttonDelete svg path:hover {
-   fill: tomato;
+.btnDelete {
+   position: absolute;
+   right: 30px;
+   top: 110px;
+   cursor: pointer;
+}
+
+.btnDelete:before,
+.btnDelete:after {
+   position: absolute;
+   left: 15px;
+   content: " ";
+   height: 23px;
+   width: 2px;
+   background-color: #313037;
+}
+.btnDelete:before {
+   transform: rotate(45deg);
+}
+.btnDelete:after {
+   transform: rotate(-45deg);
 }
 
 .containerTotalPrice {
