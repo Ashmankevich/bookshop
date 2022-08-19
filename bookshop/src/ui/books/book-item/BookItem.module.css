@@ -68,18 +68,11 @@
    top: 0;
    right: 15px;
    padding: 14px 12px;
+   background-color: #313037;
 }
 
 .buttonFav:hover,
-.buttonFav:active {
-   background-color: #313037;
-   box-shadow: none;
-}
-
-.buttonFav:hover svg,
 .buttonFav:active svg {
-   background-color: #313037;
-   box-shadow: none;
    fill: #fc857f;
 }
 
