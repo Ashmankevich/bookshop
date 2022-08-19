@@ -24,12 +24,8 @@ export const BookDetails: React.FC<BookDetailsProps> = ({ book }) => {
       <Title className={style.bookTitle}>{book.title}</Title>
       <div className={style.wrapperBook} key={book.isbn13}>
         <div className={style.containerPic}>
-          <ButtonPrimary
-            className={style.buttonFav}
-            type="button"
-            onClick={() => handleFav(book)}
-          >
-            <FavouritePreHoverIcon />
+          <ButtonPrimary type="button" onClick={() => handleFav(book)}>
+            <FavouritePreHoverIcon className={style.buttonFav} />
           </ButtonPrimary>
           <img className={style.pic} src={book.image} alt="" />
         </div>
