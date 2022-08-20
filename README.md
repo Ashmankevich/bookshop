@@ -32,6 +32,7 @@ At the moment this is the MVP of my project which called 'bookshop', you can che
 8. [React Loader Spinner](https://www.npmjs.com/package/react-loader-spinner)
 9. [React Slick](https://www.npmjs.com/package/react-slick)
 10. [React Slick Carousel](https://www.npmjs.com/package/slick-carousel)
+11. [React Toggle](https://www.npmjs.com/package/react-toggle)
 11. [gh-pages](https://www.npmjs.com/package/gh-pages)
 12. [Firebase](https://firebase.google.com/)
 13. [Axios](https://axios-http.com/docs/intro)
