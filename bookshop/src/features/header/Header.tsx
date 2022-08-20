@@ -91,7 +91,7 @@ export const Header: React.FC = () => {
                   })}
                 </>
               </div>
-              <button className={style.btn}>all results</button>
+              <ButtonPrimary className={style.btn}>all results</ButtonPrimary>
             </div>
           )}
         </OutsideClickHandler>

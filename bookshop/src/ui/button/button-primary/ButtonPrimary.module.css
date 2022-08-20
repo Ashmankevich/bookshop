@@ -12,12 +12,7 @@
    padding: 14px 0;
 }
 
+.button:active,
 .button:hover {
    background-color: #5b5a62;
-   box-shadow: 4px 4px 30px #5b5a62;
-}
-
-.button:active {
-   background-color: #313037;
-   box-shadow: 4px 4px 30px #5b5a62;
 }

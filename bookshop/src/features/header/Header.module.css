@@ -14,7 +14,7 @@
 
 .button {
    position: absolute;
-   right: 135px;
+   right: 115px;
    top: 18px;
    background-color: white;
    border: none;
@@ -86,28 +86,6 @@
 .btn {
    position: absolute;
    width: 100%;
-   z-index: 2;
-   font-size: 24px;
-   font-weight: 700;
-   letter-spacing: 0.05em;
-   text-transform: uppercase;
-   padding: 14px 0;
-   text-align: center;
-   border-top: 1px solid rgb(231, 231, 231);
-   color: white;
-   background-color: #313037;
-   cursor: pointer;
-   border: none;
-}
-
-.btn:hover {
-   background-color: #5b5a62;
-   box-shadow: 4px 4px 30px #5b5a62;
-}
-
-.btn:active {
-   background-color: #313037;
-   box-shadow: 4px 4px 30px #5b5a62;
 }
 
 .nav {
