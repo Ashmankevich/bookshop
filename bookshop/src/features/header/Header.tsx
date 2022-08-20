@@ -14,6 +14,7 @@ import { ButtonPrimary } from "../../ui/button/button-primary/ButtonPrimary";
 import { ChangeEvent, useEffect, useState } from "react";
 import { SearchBooksApi } from "../../store/types";
 import { bookApi } from "../../api/bookApi";
+import { Switcher } from "../../ui/switcher/Switcher";
 import OutsideClickHandler from "react-outside-click-handler";
 
 export const Header: React.FC = () => {
@@ -96,6 +97,7 @@ export const Header: React.FC = () => {
           )}
         </OutsideClickHandler>
       </form>
+
       <nav className={style.nav}>
         <Link to={AppPages.SHOPPING_CART}>
           <ShoppingIcon></ShoppingIcon>
@@ -117,6 +119,7 @@ export const Header: React.FC = () => {
           <UserIcon></UserIcon>
         </Link>
       </nav>
+      <Switcher />
     </header>
   );
 };
