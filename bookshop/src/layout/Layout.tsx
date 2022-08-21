@@ -6,9 +6,11 @@ import style from "./Layout.module.css";
 export const Layout = () => {
   return (
     <div className={style.wrapper}>
-      <Header></Header>
-      <Outlet></Outlet>
-      <Footer></Footer>
+      <div className={style.container}>
+        <Header></Header>
+        <Outlet></Outlet>
+        <Footer></Footer>
+      </div>
     </div>
   );
 };

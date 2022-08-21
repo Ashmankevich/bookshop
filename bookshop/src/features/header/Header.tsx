@@ -11,14 +11,15 @@ import { useAppSelector } from "../../store/hooks";
 import { getCartInfo, getFav } from "../../store/selectors";
 import { AppPages } from "../../router-routes/routes";
 import { ButtonPrimary } from "../../ui/button/button-primary/ButtonPrimary";
-import { ChangeEvent, useEffect, useState } from "react";
+import { ChangeEvent, useContext, useEffect, useState } from "react";
 import { SearchBooksApi } from "../../store/types";
 import { bookApi } from "../../api/bookApi";
 import { Switcher } from "../../ui/switcher/Switcher";
 import OutsideClickHandler from "react-outside-click-handler";
-import { Toggle } from "../../ui/toggle/Toggle";
+import { AppContext } from "../../AppContext";
 
 export const Header: React.FC = () => {
+  const appRef = useContext(AppContext);
   const { register, handleSubmit } = useForm();
   const { cart } = useAppSelector(getCartInfo);
   const { fav } = useAppSelector(getFav);
@@ -121,7 +122,36 @@ export const Header: React.FC = () => {
         </Link>
       </nav>
       <Switcher />
-      <Toggle onChange={undefined} />
+      <div className={style.root}>
+        <label className={style.switch} htmlFor="toggler">
+          <input
+            className={style.inputToggle}
+            id="toggler"
+            type="checkbox"
+            onChange={(event) => {
+              const style = appRef?.current!.style!;
+              if (event.target.checked) {
+                style.setProperty("--primary-text-color", "white");
+                style.setProperty(
+                  "--background-color",
+                  "var(--ds-background-color)"
+                );
+                style.setProperty(
+                  "--btn-background-color",
+                  "var(--ds-btn-background-color)"
+                );
+              } else {
+                style.removeProperty("--primary-text-color");
+                style.removeProperty("--background-color");
+                style.removeProperty("--btn-background-color");
+              }
+            }}
+            readOnly
+          />
+          <span className={style.slider} />
+          <span className={style.wave} />
+        </label>
+      </div>
     </header>
   );
 };

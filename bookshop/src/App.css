@@ -1,0 +1,26 @@
+#root {
+   --ls-background-color: rgba(167, 114, 162, 0.521);
+   --ds-background-color: rgba(173, 32, 143, 0.527);
+   --ls-btn-background-color: #ec7979;
+   --ds-btn-background-color: #2b5e31d0;
+   --primary-text-color: #ec7979;
+
+   --background-color: var(--ls-background-color);
+   --btn-background-color: var(--ls-btn-background-color);
+   /*to need refactor prop below*/
+   --secondary-text-color: grey;
+   --menu-color: rgb(231, 126, 145);
+   --burger-open-color: whitesmoke;
+}
+
+@media (prefers-color-scheme: dark) {
+   #root {
+      --background-color: var(--ds-background-color);
+      --btn-background-color: var(--ds-btn-background-color);
+      /*to need refactor prop below*/
+      --primary-text-color: #725858;
+      --secondary-text-color: rgb(126, 37, 37);
+      --menu-color: rgb(88, 188, 255);
+      --burger-open-color: rgb(150, 78, 78);
+   }
+}
