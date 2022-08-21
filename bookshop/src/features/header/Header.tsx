@@ -16,6 +16,7 @@ import { SearchBooksApi } from "../../store/types";
 import { bookApi } from "../../api/bookApi";
 import { Switcher } from "../../ui/switcher/Switcher";
 import OutsideClickHandler from "react-outside-click-handler";
+import { Toggle } from "../../ui/toggle/Toggle";
 
 export const Header: React.FC = () => {
   const { register, handleSubmit } = useForm();
@@ -120,6 +121,7 @@ export const Header: React.FC = () => {
         </Link>
       </nav>
       <Switcher />
+      <Toggle onChange={undefined} />
     </header>
   );
 };
