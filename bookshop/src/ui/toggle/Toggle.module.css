@@ -1,17 +1,14 @@
 .root {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   width: 120px;
-   height: 50px;
-   transform: translate(-50%, -50%);
+   position: relative;
+   width: 60px;
+   height: 25px;
 }
 
-.root .inputToggle {
+.inputToggle {
    display: none;
 }
 
-.root .slider {
+.slider {
    position: absolute;
    top: 0;
    right: 0;
@@ -20,48 +17,48 @@
    z-index: 1;
    overflow: hidden;
    background-color: #e74a42;
-   border-radius: 50px;
+   border-radius: 25px;
    cursor: pointer;
    transition: all 1.4s;
 }
 
-.root .slider:before,
-.root .slider:after {
+.slider:before,
+.slider:after {
    content: "";
    position: absolute;
-   bottom: 5px;
-   left: 5px;
-   width: 40px;
-   height: 40px;
+   bottom: 2.5px;
+   left: 2.5px;
+   width: 20px;
+   height: 20px;
+   border-radius: 15px;
    background-color: #ffffff;
-   border-radius: 30px;
 }
 
-.root .slider:before,
-.root .slider:after {
+.slider:before,
+.slider:after {
    transition: 0.4s;
 }
 
-.root .wave {
+.wave {
    position: absolute;
    top: 0;
    left: 0;
-   width: 120px;
-   height: 50px;
-   border-radius: 40px;
+   width: 60px;
+   height: 25px;
+   border-radius: 20px;
    transition: all 1.4s;
 }
 
-.root .inputToggle:checked + .slider {
+.inputToggle:checked + .slider {
    background-color: transparent;
 }
 
-.root .inputToggle:checked + .slider:before,
-.root .inputToggle:checked + .slider:after {
-   transform: translateX(70px);
+.inputToggle:checked + .slider:before,
+.inputToggle:checked + .slider:after {
+   transform: translateX(35px);
 }
 
-.root .inputToggle:checked ~ .wave {
+.inputToggle:checked ~ .wave {
    display: block;
-   background-color: #3398d9;
+   background-color: #eec511;
 }

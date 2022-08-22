@@ -1,6 +1,6 @@
 #root {
-   --ls-background-color: rgba(167, 114, 162, 0.521);
-   --ds-background-color: rgba(173, 32, 143, 0.527);
+   --ls-background-color: white;
+   --ds-background-color: black;
    --ls-btn-background-color: #ec7979;
    --ds-btn-background-color: #2b5e31d0;
    --primary-text-color: #ec7979;
