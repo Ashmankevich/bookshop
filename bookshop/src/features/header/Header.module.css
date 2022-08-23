@@ -107,13 +107,13 @@
    width: 8px;
    height: 8px;
    border-radius: 50%;
-   border: 2px solid white;
+   border: 2px solid #fff;
    background-color: #fc857f;
 }
 
 .logoName {
    text-transform: uppercase;
-   color: #313037;
+   color: var(--primary-title-color);
    font-size: 35px;
    font-weight: 600;
 }

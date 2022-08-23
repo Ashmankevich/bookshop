@@ -1,7 +1,7 @@
 .title {
    font-size: 56px;
    font-weight: 700;
-   color: #313037;
+   color: var(--primary-title-color);
    text-transform: uppercase;
    padding: 40px 0;
 }
