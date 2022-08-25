@@ -14,17 +14,15 @@ export const Toggle: React.FC = () => {
           onChange={(event) => {
             const style = appRef?.current!.style!;
             if (event.target.checked) {
-              style.setProperty(
-                "--background-color",
-                "var(--ds-background-color)"
-              );
-              style.setProperty(
-                "--primary-title-color",
-                "var(--ds-primary-color)"
-              );
+              style.setProperty("--background", "var(--ds-background)");
+              style.setProperty("--primary-title", "var(--ds-primary-color)");
+              style.setProperty("--main-item", " var(--ds-main-item)");
+              style.setProperty("--border", "var(--ds-border)");
             } else {
-              style.removeProperty("--background-color");
-              style.removeProperty("--primary-title-color");
+              style.removeProperty("--background");
+              style.removeProperty("--primary-title");
+              style.removeProperty("--main-item");
+              style.removeProperty("--border");
             }
           }}
           readOnly

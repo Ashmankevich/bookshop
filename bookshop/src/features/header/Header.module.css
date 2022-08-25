@@ -113,7 +113,7 @@
 
 .logoName {
    text-transform: uppercase;
-   color: var(--primary-title-color);
+   color: var(--primary-title);
    font-size: 35px;
    font-weight: 600;
 }
@@ -130,7 +130,7 @@
    line-height: 32px;
    padding: 12px 20px;
    outline: none;
-   border: 1px solid #e7e7e7;
+   border: 1px solid var(--border);
 }
 
 .input:focus {
