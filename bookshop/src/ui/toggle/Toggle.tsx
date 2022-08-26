@@ -16,12 +16,14 @@ export const Toggle: React.FC = () => {
             if (event.target.checked) {
               style.setProperty("--background", "var(--ds-background)");
               style.setProperty("--primary-title", "var(--ds-primary-color)");
-              style.setProperty("--main-item", " var(--ds-main-item)");
+              style.setProperty("--first-item", " var(--ds-first-item)");
+              style.setProperty("--second-item", " var(--ds-second-item)");
               style.setProperty("--border", "var(--ds-border)");
             } else {
               style.removeProperty("--background");
               style.removeProperty("--primary-title");
-              style.removeProperty("--main-item");
+              style.removeProperty("--first-item");
+              style.removeProperty("--second-item");
               style.removeProperty("--border");
             }
           }}

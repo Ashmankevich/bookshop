@@ -1,5 +1,5 @@
 .block {
-   background-color: var(--main-item);
+   background-color: var(--first-item);
    padding: 40px 80px 0 80px;
 }
 
@@ -16,12 +16,12 @@
    line-height: 32px;
    padding: 12px 20px;
    outline: none;
-   border: 1px solid #e7e7e7;
+   border: 1px solid var(--border);
    margin-bottom: 60px;
 }
 
 .input:focus {
-   box-shadow: inset 0 0 0 2px #e7e7e7;
+   box-shadow: inset 0 0 0 2px var(--border);
 }
 
 .title {

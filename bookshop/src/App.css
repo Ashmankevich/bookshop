@@ -4,11 +4,14 @@
    --ls-primary-color: #313037;
    --ds-primary-color: #fff;
    --primary-title: var(--ls-primary-color);
-   --ls-main-item: #f4eefd;
-   --ds-main-item: #4a794a;
-   --main-item: var(--ls-main-item);
+   --ls-first-item: #f4eefd;
+   --ds-first-item: #4a794a;
+   --first-item: var(--ls-first-item);
+   --ls-second-item: #d7e4fd;
+   --ds-second-item: #255d6b;
+   --second-item: var(--ls-second-item);
    --ls-border: #e7e7e7;
-   --ds-border: #fc5c00;
+   --ds-border: #eec511;
    --border: var(--ls-border);
 }
 
@@ -16,7 +19,8 @@
    #root {
       --background: var(--ds-background);
       --primary-title: var(--ds-primary-color);
-      --main-item: var(--ds-main-item);
+      --first-item: var(--ds-first-item);
+      --second-item: var(--ds-second-item);
       --border: var(--ds-border);
    }
 }

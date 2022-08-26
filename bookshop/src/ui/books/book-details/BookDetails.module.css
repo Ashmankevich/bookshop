@@ -12,7 +12,7 @@
    max-width: 544px;
    width: 100%;
    position: relative;
-   background: #f4eefd;
+   background: var(--first-item);
 }
 
 .pic {
