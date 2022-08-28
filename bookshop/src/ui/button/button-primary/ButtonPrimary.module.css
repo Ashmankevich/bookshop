@@ -4,8 +4,8 @@
    font-weight: 700;
    letter-spacing: 0.05em;
    text-transform: uppercase;
-   color: white;
-   background-color: #313037;
+   color: #fff;
+   background-color: var(--ui-item);
    transition: 0.3s linear;
    border: none;
    cursor: pointer;

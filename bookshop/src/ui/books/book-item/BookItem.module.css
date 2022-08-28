@@ -68,7 +68,7 @@
    top: 0;
    right: 15px;
    padding: 14px 12px;
-   background-color: #313037;
+   background-color: var(--ui-item);
 }
 
 .buttonFav:hover,

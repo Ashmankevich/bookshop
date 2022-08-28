@@ -19,12 +19,14 @@ export const Toggle: React.FC = () => {
               style.setProperty("--first-item", " var(--ds-first-item)");
               style.setProperty("--second-item", " var(--ds-second-item)");
               style.setProperty("--border", "var(--ds-border)");
+              style.setProperty("--ui-item", "var(--ds-ui-item)");
             } else {
               style.removeProperty("--background");
               style.removeProperty("--primary-title");
               style.removeProperty("--first-item");
               style.removeProperty("--second-item");
               style.removeProperty("--border");
+              style.removeProperty("--ui-item");
             }
           }}
           readOnly
