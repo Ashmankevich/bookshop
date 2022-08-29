@@ -73,7 +73,11 @@
 
 .buttonFav:hover,
 .buttonFav:active svg {
-   fill: #fc857f;
+   fill: var(--iconFav);
+}
+
+.buttonFav path {
+   stroke: var(--iconFav);
 }
 
 @media (min-width: 569px) and (max-width: 1140px) {

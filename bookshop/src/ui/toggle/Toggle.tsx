@@ -20,6 +20,8 @@ export const Toggle: React.FC = () => {
               style.setProperty("--second-item", " var(--ds-second-item)");
               style.setProperty("--border", "var(--ds-border)");
               style.setProperty("--ui-item", "var(--ds-ui-item)");
+              style.setProperty("--icon", "var(--ds-icon)");
+              style.setProperty("--iconFav", "var(--ds-icon)");
             } else {
               style.removeProperty("--background");
               style.removeProperty("--primary-title");
@@ -27,6 +29,8 @@ export const Toggle: React.FC = () => {
               style.removeProperty("--second-item");
               style.removeProperty("--border");
               style.removeProperty("--ui-item");
+              style.removeProperty("--icon");
+              style.removeProperty("--iconFav");
             }
           }}
           readOnly

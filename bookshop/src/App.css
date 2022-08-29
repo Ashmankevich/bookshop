@@ -16,6 +16,11 @@
    --ls-ui-item: #313037;
    --ds-ui-item: #252330;
    --ui-item: var(--ls-ui-item);
+   --ls-icon: #313037;
+   --ls-iconFav: #fc857f;
+   --ds-icon: #eec511;
+   --icon: var(--ls-icon);
+   --iconFav: var(--ls-iconFav);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,5 +31,7 @@
       --second-item: var(--ds-second-item);
       --border: var(--ds-border);
       --ui-item: var(--ds-ui-item);
+      --icon: var(--ds-icon);
+      --iconFav: var(--ds-icon);
    }
 }
