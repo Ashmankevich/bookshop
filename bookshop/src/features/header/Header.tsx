@@ -100,7 +100,7 @@ export const Header: React.FC = () => {
 
       <nav className={style.nav}>
         <Link to={AppPages.SHOPPING_CART}>
-          <ShoppingIcon className={style.ShoppingIcon}></ShoppingIcon>
+          <ShoppingIcon className={style.shoppingIcon}></ShoppingIcon>
           {cart.length !== 0 ? (
             <div className={style.notificationContainer}></div>
           ) : (
@@ -108,7 +108,7 @@ export const Header: React.FC = () => {
           )}
         </Link>
         <Link to={AppPages.FAVOURITE}>
-          <FavouriteIcon className={style.FavouriteIcon}></FavouriteIcon>
+          <FavouriteIcon className={style.favouriteIcon}></FavouriteIcon>
           {fav.length !== 0 ? (
             <div className={style.notificationContainer}></div>
           ) : (
@@ -116,7 +116,7 @@ export const Header: React.FC = () => {
           )}
         </Link>
         <Link to={AppPages.ACCOUNT}>
-          <UserIcon className={style.UserIcon}></UserIcon>
+          <UserIcon className={style.userIcon}></UserIcon>
         </Link>
       </nav>
       <Toggle />

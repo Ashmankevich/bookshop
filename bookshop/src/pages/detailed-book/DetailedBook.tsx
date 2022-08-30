@@ -6,10 +6,10 @@ import { fetchBookDetails } from "../../store/slices/bookSlice";
 import { BookDetails } from "../../ui/books/book-details/BookDetails";
 import { ButtonBack } from "../../ui/button/button-back/ButtonBack";
 import { useNavigate, useParams } from "react-router-dom";
-import { BackIcon } from "../../assets";
 import { Spinner } from "../../ui/spinner/Spinner";
 import { Title } from "../../ui/title/Title";
 import { Carousel } from "../../ui/slider/Slider";
+import style from "./DetailedBook.module.css";
 
 type DetailedBookProps = {};
 
@@ -40,9 +40,10 @@ export const DetailedBook: React.FC<DetailedBookProps> = () => {
 
   return (
     <>
-      <ButtonBack onClick={buttonBack}>
-        <BackIcon></BackIcon>
-      </ButtonBack>
+      <ButtonBack
+        className={style.buttonBack}
+        onClick={buttonBack}
+      ></ButtonBack>
       <BookDetails book={result}></BookDetails>
       <Carousel books={books}></Carousel>
       <Subscribe></Subscribe>

@@ -4,20 +4,6 @@
    margin-bottom: 50px;
 }
 
-.btnPagRight {
-   background-color: white;
-   border: none;
-   margin-right: 0;
-}
-
-.btnPagLeft {
-   background-color: white;
-   border: none;
-   margin-left: 0;
-}
-
-.btnPagRight:hover,
-.btnPagLeft:hover,
 .btnToRightPage:hover,
 .btnCurrentPage:hover {
    background-color: white;

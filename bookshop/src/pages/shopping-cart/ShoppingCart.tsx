@@ -1,6 +1,5 @@
 import { Title } from "../../ui/title/Title";
 import { Navigate, useNavigate } from "react-router-dom";
-import { BackIcon } from "../../assets";
 import { ButtonBack } from "../../ui/button/button-back/ButtonBack";
 import { Cart } from "../../features/cart/Cart";
 import { AppPages } from "../../router-routes/routes";
@@ -21,9 +20,7 @@ export const ShoppingCart: React.FC<ShoppingCartProps> = () => {
 
   return isAuth ? (
     <>
-      <ButtonBack onClick={buttonBack}>
-        <BackIcon></BackIcon>
-      </ButtonBack>
+      <ButtonBack onClick={buttonBack}></ButtonBack>
       <Title className={style.title}>Your Cart</Title>
       <Cart></Cart>
       <Carousel books={books}></Carousel>

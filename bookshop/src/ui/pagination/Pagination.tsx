@@ -1,5 +1,4 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { LeftIcon, RightIcon } from "../../assets";
 import { useAppSelector } from "../../store/hooks";
 import { getBooks } from "../../store/selectors";
 import { ButtonPrimary } from "../button/button-primary/ButtonPrimary";
@@ -11,16 +10,6 @@ export const Pagination: React.FC<PaginationProps> = () => {
   const { title = "", page = "" } = useParams();
   const { total } = useAppSelector(getBooks);
   const navigate = useNavigate();
-
-  const handleNextPage = () => {
-    navigate(`/bookshop/search/${title}/${Number(page) + 1}`);
-  };
-  const handlePrevPage = () => {
-    if (Number(page) === 1) {
-      return;
-    }
-    navigate(`/bookshop/search/${title}/${Number(page) - 1}`);
-  };
 
   const handleNextButton = () => {
     navigate(`/bookshop/search/${title}/${Number(page) + 1}`);
@@ -36,13 +25,6 @@ export const Pagination: React.FC<PaginationProps> = () => {
 
   return (
     <div className={style.container}>
-      <ButtonPrimary
-        type="button"
-        onClick={handlePrevPage}
-        className={style.btnPagLeft}
-      >
-        <LeftIcon></LeftIcon>
-      </ButtonPrimary>
       <div className={style.pages}>
         <ButtonPrimary
           onClick={handlePrevButton}
@@ -58,13 +40,6 @@ export const Pagination: React.FC<PaginationProps> = () => {
           {total && +page < Math.ceil(+total) / 10 ? +page + 1 : +page + 1}
         </ButtonPrimary>
       </div>
-      <ButtonPrimary
-        type="button"
-        onClick={handleNextPage}
-        className={style.btnPagRight}
-      >
-        <RightIcon></RightIcon>
-      </ButtonPrimary>
     </div>
   );
 };

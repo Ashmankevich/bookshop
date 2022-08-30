@@ -1,14 +1,44 @@
 .button {
-   margin: 77px 0 37px 0;
-   font-size: 24px;
-   font-weight: 700;
-   letter-spacing: 0.05em;
-   text-transform: uppercase;
-   transition: 0.3s linear;
-   border: none;
    cursor: pointer;
-   padding: 14px 0;
-   background-color: white;
+   width: 100px;
+   height: 60px;
+   position: relative;
+   background-color: var(--background);
+   border: none;
+}
+
+.button:active {
+   background-color: var(--background);
+}
+
+.button div {
+   position: relative;
+   top: 0;
+   width: 80px;
+   height: 3px;
+   background-color: var(--icon);
+   left: 0;
+   display: block;
+}
+.button div::after {
+   content: "";
+   position: absolute;
+   width: 30px;
+   height: 3px;
+   top: -12px;
+   right: 53px;
+   background-color: var(--icon);
+   transform: rotate(135deg);
+}
+.button div::before {
+   content: "";
+   position: absolute;
+   width: 30px;
+   height: 3px;
+   top: 12px;
+   right: 53px;
+   background-color: var(--icon);
+   transform: rotate(-135deg);
 }
 
 @media (max-width: 568px) {

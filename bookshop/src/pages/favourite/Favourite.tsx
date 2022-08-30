@@ -1,7 +1,6 @@
 import style from "./Favourite.module.css";
 import { Title } from "../../ui/title/Title";
 import { Navigate, useNavigate } from "react-router-dom";
-import { BackIcon } from "../../assets";
 import { ButtonBack } from "../../ui/button/button-back/ButtonBack";
 import { AppPages } from "../../router-routes/routes";
 import { useAuth } from "../../store/hooks";
@@ -18,9 +17,7 @@ export const Favourite: React.FC<FavouriteProps> = () => {
 
   return isAuth ? (
     <>
-      <ButtonBack onClick={buttonBack}>
-        <BackIcon></BackIcon>
-      </ButtonBack>
+      <ButtonBack onClick={buttonBack}></ButtonBack>
       <Title className={style.title}>Your Favourite List</Title>
       <FavouriteList></FavouriteList>
     </>
