@@ -17,7 +17,10 @@ export const Favourite: React.FC<FavouriteProps> = () => {
 
   return isAuth ? (
     <>
-      <ButtonBack onClick={buttonBack}></ButtonBack>
+      <ButtonBack
+        className={style.buttonBack}
+        onClick={buttonBack}
+      ></ButtonBack>
       <Title className={style.title}>Your Favourite List</Title>
       <FavouriteList></FavouriteList>
     </>

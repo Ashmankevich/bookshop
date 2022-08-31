@@ -35,7 +35,9 @@ export const RegisterAuth = () => {
       <FormAuth title="Sign Up" handleClick={handleRegister} />
       <div className={style.containerText}>
         {isSignUpError ? (
-          <p>Wrong data... Please, check your email or password</p>
+          <p className={style.text}>
+            Wrong data... Please, check your email or password
+          </p>
         ) : (
           ""
         )}

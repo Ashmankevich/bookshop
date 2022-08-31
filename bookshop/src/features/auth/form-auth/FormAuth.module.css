@@ -40,7 +40,7 @@
 .login:active,
 .register:hover,
 .register:active {
-   color: #313037;
+   color: var(--primary-title);
 }
 
 .input {
@@ -62,6 +62,7 @@
    font-size: 16px;
    line-height: 32px;
    font-weight: 700;
+   color: var(--primary-title);
 }
 
 @media (max-width: 568px) {

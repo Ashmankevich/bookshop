@@ -29,7 +29,7 @@
 }
 
 .title {
-   color: #313037;
+   color: var(--primary-title);
    font-size: 24px;
    font-weight: 700;
    line-height: 32px;
@@ -47,7 +47,7 @@
 }
 
 .price {
-   color: #313037;
+   color: var(--primary-title);
    font-size: 24px;
    font-weight: 700;
    line-height: 32px;
@@ -61,17 +61,21 @@
    position: absolute;
    right: 100px;
    top: 70px;
-   background-color: white;
+   background-color: var(--background);
 }
 
 .removeBtn:hover,
 .removeBtn:active {
-   background-color: white;
+   background-color: var(--background);
    box-shadow: none;
 }
 
 .removeBtn svg {
-   fill: #fc857f;
+   fill: var(--iconFav);
+}
+
+.removeBtn path {
+   stroke: var(--iconFav);
 }
 
 .removeBtn svg:hover,

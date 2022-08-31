@@ -6,17 +6,21 @@
 .wrapper:after {
    content: " ";
    display: block;
-   border-bottom: 2px solid #313037;
+   border-bottom: 2px solid var(--primary-title);
    width: 239px;
    position: absolute;
    top: 17.2%;
-   right: 27.1%;
+   right: 27.3%;
 }
 
 .containerText {
    position: absolute;
    top: 68%;
    left: 32%;
+}
+
+.text {
+   color: var(--iconFav);
 }
 
 @media (max-width: 568px) {

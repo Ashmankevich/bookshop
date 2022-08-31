@@ -39,7 +39,7 @@
    font-size: 24px;
    font-weight: 700;
    line-height: 32px;
-   color: #313037;
+   color: var(--primary-title);
 }
 
 .subTitle {
@@ -69,7 +69,7 @@
 .price {
    font-size: 40px;
    font-weight: 700;
-   color: #313037;
+   color: var(--primary-title);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -115,7 +115,7 @@ button:active {
    content: " ";
    height: 23px;
    width: 2px;
-   background-color: #313037;
+   background-color: var(--primary-title);
 }
 .btnDelete:before {
    transform: rotate(45deg);
@@ -135,6 +135,7 @@ button:active {
    font-weight: 700;
    line-height: 60px;
    margin-bottom: 20px;
+   color: var(--primary-title);
 }
 
 @media (max-width: 750px) {

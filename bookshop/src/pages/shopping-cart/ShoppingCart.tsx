@@ -20,7 +20,10 @@ export const ShoppingCart: React.FC<ShoppingCartProps> = () => {
 
   return isAuth ? (
     <>
-      <ButtonBack onClick={buttonBack}></ButtonBack>
+      <ButtonBack
+        className={style.buttonBack}
+        onClick={buttonBack}
+      ></ButtonBack>
       <Title className={style.title}>Your Cart</Title>
       <Cart></Cart>
       <Carousel books={books}></Carousel>

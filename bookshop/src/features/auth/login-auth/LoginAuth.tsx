@@ -34,7 +34,9 @@ export const LoginAuth = () => {
       <FormAuth title="Sign In" handleClick={handleLogin} />
       <div className={style.containerText}>
         {isSignInError ? (
-          <p>Something was wrong... Please, check your email or password</p>
+          <p className={style.text}>
+            Something was wrong... Please, check your email or password
+          </p>
         ) : (
           " "
         )}
