@@ -15,18 +15,38 @@
 
 .button {
    position: absolute;
-   right: 115px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   right: 125px;
    top: 18px;
-   background-color: white;
-   border: none;
+   background-color: #313037;
    padding: 0;
-   font-size: 0;
-   width: 40px;
-   cursor: pointer;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+}
+
+.button::after {
+   content: "";
+   position: absolute;
+   top: 22px;
+   left: 12px;
+   width: 16px;
+   height: 2px;
+   transform: rotate(45deg);
+   background-color: #313037;
+}
+
+.circle {
+   width: 16px;
+   height: 16px;
+   border-radius: 50%;
+   background-color: #fff;
 }
 
 .button:hover {
-   background-color: white;
+   background-color: #313037;
    box-shadow: none;
 }
 

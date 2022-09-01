@@ -10,7 +10,6 @@ import { BookCartApi } from "../../store/types";
 import { getCartInfo } from "../../store/selectors";
 import { Link } from "react-router-dom";
 import { ButtonPrimary } from "../../ui/button/button-primary/ButtonPrimary";
-import { AddItemIcon, RemoveIcon } from "../../assets";
 
 type CartProps = {};
 
@@ -61,12 +60,18 @@ export const Cart: React.FC<CartProps> = () => {
                     {book.publisher}, {book.year}
                   </p>
                   <div className={style.containerAmount}>
-                    <ButtonPrimary className={style.button}>
-                      <RemoveIcon onClick={() => RemoveItem(book)} />
+                    <ButtonPrimary
+                      className={style.button}
+                      onClick={() => RemoveItem(book)}
+                    >
+                      <div className={style.btnRemove} />
                     </ButtonPrimary>
-                    <p className={style.text}>{book.amount}</p>
-                    <ButtonPrimary className={style.button}>
-                      <AddItemIcon onClick={() => AddItem(book)} />
+                    <p className={style.amount}>{book.amount}</p>
+                    <ButtonPrimary
+                      className={style.button}
+                      onClick={() => AddItem(book)}
+                    >
+                      <div className={style.btnAddItem} />
                     </ButtonPrimary>
                   </div>
                 </div>

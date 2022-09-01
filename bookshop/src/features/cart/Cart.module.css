@@ -46,7 +46,7 @@
    font-size: 16px;
    font-weight: 700;
    line-height: 24px;
-   margin: 0 0 15px 0;
+   margin: 0 0 30px 0;
    padding: 0 10px;
    color: #a8a8a8;
 }
@@ -56,14 +56,13 @@
    justify-content: space-between;
    align-items: center;
    width: 180px;
-   margin: auto 10px 0;
 }
 
-.text {
-   font-size: 24px;
+.amount {
+   font-size: 44px;
    font-weight: 700;
-   line-height: 32px;
-   color: #313037;
+   margin: 0 25px;
+   color: var(--primary-title);
 }
 
 .price {
@@ -79,25 +78,51 @@
 
 .button {
    margin: 5px 10px 0 10px;
-   background-color: white;
+   background-color: var(--background);
+   width: 40px;
+   height: 40px;
    box-shadow: none;
    position: relative;
 }
 
+.btnRemove {
+   position: relative;
+   width: 40px;
+   height: 3px;
+   background-color: var(--icon);
+}
+
+.btnAddItem {
+   position: relative;
+   width: 40px;
+   height: 3px;
+   background-color: var(--icon);
+}
+
+.btnAddItem::after {
+   position: absolute;
+   content: "";
+   width: 40px;
+   height: 3px;
+   right: 0;
+   background-color: var(--icon);
+   transform: rotate(90deg);
+}
+
 .button:hover,
-button:active {
-   background-color: white;
+.button:active {
+   background-color: var(--background);
    box-shadow: none;
 }
 
 .buttonDelete {
    margin: 5px 10px 0 10px;
-   background-color: white;
+   background-color: var(--background);
    box-shadow: none;
 }
 
 .buttonDelete:hover {
-   background-color: white;
+   background-color: var(--background);
    box-shadow: none;
 }
 
@@ -115,7 +140,7 @@ button:active {
    content: " ";
    height: 23px;
    width: 2px;
-   background-color: var(--primary-title);
+   background-color: var(--icon);
 }
 .btnDelete:before {
    transform: rotate(45deg);

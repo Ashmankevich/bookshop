@@ -1,12 +1,7 @@
 import style from "./Header.module.css";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
-import {
-  FavouriteIcon,
-  SearchIcon,
-  ShoppingIcon,
-  UserIcon,
-} from "../../assets";
+import { FavouriteIcon, ShoppingIcon, UserIcon } from "../../assets";
 import { useAppSelector } from "../../store/hooks";
 import { getCartInfo, getFav } from "../../store/selectors";
 import { AppPages } from "../../router-routes/routes";
@@ -60,7 +55,7 @@ export const Header: React.FC = () => {
           value={title}
         ></input>
         <ButtonPrimary type="submit" className={style.button}>
-          <SearchIcon></SearchIcon>
+          <div className={style.circle}></div>
         </ButtonPrimary>
         <OutsideClickHandler
           onOutsideClick={() => {
