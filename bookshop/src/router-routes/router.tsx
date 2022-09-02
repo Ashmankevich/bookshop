@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Search } from "../features/search/Search";
+import { Search } from "../features/search/SearchResultPage/SearchResultPage";
 import { Layout } from "../layout/Layout";
 import { Account } from "../pages/account/Account";
 import { DetailedBook } from "../pages/detailed-book/DetailedBook";

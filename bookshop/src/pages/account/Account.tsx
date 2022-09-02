@@ -17,15 +17,17 @@ export const Account: React.FC<AccountProps> = () => {
   return isAuth ? (
     <>
       <Title>Account</Title>
-      <ButtonPrimary
-        className={style.button}
-        onClick={() => dispatch(removeUser())}
-      >
-        Log out from {email}
-      </ButtonPrimary>
-      <Link className={style.link} to={AppPages.HOME}>
-        Jump to Main
-      </Link>
+      <div className={style.wrapper}>
+        <ButtonPrimary
+          className={style.button}
+          onClick={() => dispatch(removeUser())}
+        >
+          Log out from {email}
+        </ButtonPrimary>
+        <Link className={style.link} to={AppPages.HOME}>
+          jump to main
+        </Link>
+      </div>
     </>
   ) : (
     <Navigate to={AppPages.SIGN_IN} />

@@ -1,0 +1,16 @@
+.link {
+   text-decoration: none;
+}
+
+.logoName {
+   text-transform: uppercase;
+   color: var(--primary-title);
+   font-size: 35px;
+   font-weight: 600;
+}
+
+@media (max-width: 820px) {
+   .logoName {
+      font-size: 25px;
+   }
+}

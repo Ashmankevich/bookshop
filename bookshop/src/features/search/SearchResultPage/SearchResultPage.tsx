@@ -1,15 +1,15 @@
-import style from "./Search.module.css";
-import { Title } from "../../ui/title/Title";
+import style from "./SearchResultPage.module.css";
+import { Title } from "../../../ui/title/Title";
 import { useEffect, useState } from "react";
-import { useAppDispatch, useAppSelector } from "../../store/hooks";
-import { getBooks, getStatus } from "../../store/selectors";
-import { BookList } from "../../ui/books/book-list/BookList";
+import { useAppDispatch, useAppSelector } from "../../../store/hooks";
+import { getBooks, getStatus } from "../../../store/selectors";
+import { BookList } from "../../../ui/books/book-list/BookList";
 import { useParams } from "react-router-dom";
-import { fetchSearchBooks } from "../../store/slices/bookSlice";
-import { Spinner } from "../../ui/spinner/Spinner";
-import { Pagination } from "../../ui/pagination/Pagination";
-import { SearchBooksApi } from "../../store/types";
-import { bookApi } from "../../api/bookApi";
+import { fetchSearchBooks } from "../../../store/slices/bookSlice";
+import { Spinner } from "../../../ui/spinner/Spinner";
+import { Pagination } from "../../../ui/pagination/Pagination";
+import { SearchBooksApi } from "../../../store/types";
+import { bookApi } from "../../../api/bookApi";
 
 type SearchProps = {};
 

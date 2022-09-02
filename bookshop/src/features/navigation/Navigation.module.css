@@ -1,0 +1,28 @@
+.nav {
+   display: flex;
+   justify-content: space-between;
+   max-width: 100px;
+   width: 100%;
+}
+
+.shoppingIcon path,
+.favouriteIcon path,
+.userIcon path {
+   stroke: var(--icon);
+}
+
+.notificationContainer {
+   position: relative;
+}
+
+.notificationContainer:before {
+   content: "";
+   position: absolute;
+   top: -30px;
+   right: -5px;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   border: 2px solid #fff;
+   background-color: #fc857f;
+}
