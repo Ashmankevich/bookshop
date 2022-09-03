@@ -76,7 +76,7 @@ export const SearchOnMain: React.FC<SearchProps> = () => {
                   })}
                 </>
               </div>
-              <ButtonPrimary className={style.btn}>all results</ButtonPrimary>
+              <button className={style.btn}>all results</button>
             </div>
           )}
         </OutsideClickHandler>

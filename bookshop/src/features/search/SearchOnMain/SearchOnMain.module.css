@@ -116,8 +116,23 @@
 }
 
 .btn {
+   background-color: var(--ui-item);
+   border: none;
+   color: #fff;
+   cursor: pointer;
+   font-size: 24px;
+   font-weight: 700;
+   letter-spacing: 0.05em;
+   padding: 14px 0;
    position: absolute;
+   text-align: center;
+   text-transform: uppercase;
    width: 100%;
+}
+
+.btn:active,
+.btn:hover {
+   background-color: #5b5a62;
 }
 
 @media (max-width: 820px) {

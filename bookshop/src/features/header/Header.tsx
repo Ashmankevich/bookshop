@@ -1,14 +1,14 @@
 import style from "./Header.module.css";
-import { Toggle } from "../../ui/toggle/Toggle";
 import { Navigation } from "../navigation/Navigation";
-import { SearchOnMain } from "../search/SearchOnMain/SearchOnMain";
+import { Toggle } from "../../ui/toggle/Toggle";
 import { Logo } from "../../ui/logo/Logo";
+import { SearchOnMain } from "../search/searchOnMain/SearchOnMain";
 
 export const Header: React.FC = () => {
   return (
     <header className={style.wrapper}>
       <Logo />
-      <SearchOnMain></SearchOnMain>
+      <SearchOnMain />
       <Navigation />
       <Toggle />
     </header>

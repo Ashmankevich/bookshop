@@ -1,4 +1,4 @@
-import style from "./SearchResultPage.module.css";
+import style from "./SearchPage.module.css";
 import { Title } from "../../../ui/title/Title";
 import { useEffect, useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../../store/hooks";
@@ -13,7 +13,7 @@ import { bookApi } from "../../../api/bookApi";
 
 type SearchProps = {};
 
-export const Search: React.FC<SearchProps> = () => {
+export const SearchPage: React.FC<SearchProps> = () => {
   const { title = " ", page = " " } = useParams();
 
   const [searchResult, setSearchResult] = useState<SearchBooksApi>();

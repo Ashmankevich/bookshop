@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Search } from "../features/search/SearchResultPage/SearchResultPage";
+import { SearchPage } from "../features/search/searchPage/SearchPage";
 import { Layout } from "../layout/Layout";
 import { Account } from "../pages/account/Account";
 import { DetailedBook } from "../pages/detailed-book/DetailedBook";
@@ -19,7 +19,7 @@ export const Router = () => {
         <Route path={AppPages.ACCOUNT} element={<Account />} />
         <Route path={AppPages.DETAILED_BOOK} element={<DetailedBook />} />
         <Route path={AppPages.FAVOURITE} element={<Favourite />} />
-        <Route path={AppPages.SEARCH} element={<Search />} />
+        <Route path={AppPages.SEARCH} element={<SearchPage />} />
         <Route path={AppPages.SIGN_IN} element={<SignIn />} />
         <Route path={AppPages.SIGN_UP} element={<SignUp />} />
         <Route path={AppPages.SHOPPING_CART} element={<ShoppingCart />} />
