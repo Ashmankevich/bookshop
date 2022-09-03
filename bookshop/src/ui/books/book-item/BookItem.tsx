@@ -2,7 +2,7 @@ import style from "./BookItem.module.css";
 import { Link } from "react-router-dom";
 import { Book, NewBookApi } from "../../../store/types";
 import { ButtonPrimary } from "../../button/button-primary/ButtonPrimary";
-import { FavouritePreHoverIcon } from "../../../assets";
+import { FavouriteIcon } from "../../../assets";
 import { useAppDispatch } from "../../../store/hooks";
 import { addFav } from "../../../store/slices/favSlice";
 
@@ -19,7 +19,7 @@ export const BookItem: React.FC<BookItemProps> = ({ book }) => {
   return (
     <div className={style.wrapper} key={book.isbn13}>
       <ButtonPrimary type="button" onClick={() => handleFav(book)}>
-        <FavouritePreHoverIcon className={style.buttonFav} />
+        <FavouriteIcon className={style.buttonFav} />
       </ButtonPrimary>
       <Link
         className={style.link}

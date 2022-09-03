@@ -83,10 +83,12 @@ export const Cart: React.FC<CartProps> = () => {
                       )}`}
                 </p>
                 <ButtonPrimary className={style.buttonDelete}>
-                  <span
-                    className={style.btnDelete}
-                    onClick={() => DeleteCart(book)}
-                  />
+                  <div className={style.btnContainer}>
+                    <span
+                      className={style.btnDelete}
+                      onClick={() => DeleteCart(book)}
+                    />
+                  </div>
                 </ButtonPrimary>
               </div>
             </div>

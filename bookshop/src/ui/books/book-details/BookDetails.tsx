@@ -4,7 +4,7 @@ import { Book, GetBookDetailsApi } from "../../../store/types";
 import { addCart } from "../../../store/slices/cartSlice";
 import { useAppDispatch } from "../../../store/hooks";
 import { Title } from "../../title/Title";
-import { FavouritePreHoverIcon } from "../../../assets";
+import { FavouriteIcon } from "../../../assets";
 import { addFav } from "../../../store/slices/favSlice";
 
 type BookDetailsProps = {
@@ -25,7 +25,7 @@ export const BookDetails: React.FC<BookDetailsProps> = ({ book }) => {
       <div className={style.wrapperBook} key={book.isbn13}>
         <div className={style.containerPic}>
           <ButtonPrimary type="button" onClick={() => handleFav(book)}>
-            <FavouritePreHoverIcon className={style.buttonFav} />
+            <FavouriteIcon className={style.buttonFav} />
           </ButtonPrimary>
           <img className={style.pic} src={book.image} alt="" />
         </div>

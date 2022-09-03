@@ -115,10 +115,17 @@
    box-shadow: none;
 }
 
+.btnContainer {
+   width: 30px;
+   height: 30px;
+}
+
 .buttonDelete {
+   align-self: center;
    margin: 5px 10px 0 10px;
    background-color: var(--background);
    box-shadow: none;
+   height: 40px;
 }
 
 .buttonDelete:hover {
@@ -128,7 +135,7 @@
 
 .btnDelete {
    position: absolute;
-   right: 30px;
+   right: 40px;
    top: 110px;
    cursor: pointer;
 }
