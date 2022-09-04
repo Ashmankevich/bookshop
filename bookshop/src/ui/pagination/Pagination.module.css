@@ -5,23 +5,24 @@
 }
 
 .btnPagRight {
-   background-color: white;
+   background-color: var(--background);
    border: none;
    margin-right: 0;
 }
 
 .btnPagLeft {
-   background-color: white;
+   background-color: var(--background);
    border: none;
    margin-left: 0;
+   align-self: center;
 }
 
 .btnPagRight:hover,
 .btnPagLeft:hover,
 .btnToRightPage:hover,
 .btnCurrentPage:hover {
-   background-color: white;
-   box-shadow: 4px 4px 30px white;
+   background-color: var(--background);
+   box-shadow: none;
 }
 
 .pages {
@@ -29,16 +30,16 @@
 }
 
 .btnToRightPage {
-   background-color: white;
+   background-color: var(--background);
    border: none;
    color: #a8a8a8;
    padding: 0 20px;
 }
 
 .btnCurrentPage {
-   background-color: white;
+   background-color: var(--background);
    border: none;
-   color: #313037;
+   color: var(--icon);
    font-size: 30px;
    font-weight: 700;
 }
@@ -61,20 +62,23 @@
 .leftIcon div,
 .rightIcon div {
    position: relative;
-   top: 0;
-   width: 80px;
-   height: 3px;
+   width: 60px;
+   height: 5px;
    background-color: var(--icon);
-   left: 0;
-   display: block;
+   top: 50%;
 }
+
+.rightIcon div {
+   left: 35px;
+}
+
 .leftIcon div::after {
    content: "";
    position: absolute;
    width: 30px;
-   height: 3px;
-   top: -12px;
-   right: 53px;
+   height: 5px;
+   top: -9px;
+   right: 36px;
    background-color: var(--icon);
    transform: rotate(135deg);
 }
@@ -82,9 +86,30 @@
    content: "";
    position: absolute;
    width: 30px;
-   height: 3px;
-   top: 12px;
-   right: 53px;
+   height: 5px;
+   top: 9px;
+   right: 36px;
    background-color: var(--icon);
    transform: rotate(-135deg);
+}
+
+.rightIcon div::after {
+   content: "";
+   position: absolute;
+   width: 30px;
+   height: 5px;
+   top: -9px;
+   left: 38px;
+   background-color: var(--icon);
+   transform: rotate(45deg);
+}
+.rightIcon div::before {
+   content: "";
+   position: absolute;
+   width: 30px;
+   height: 5px;
+   top: 9px;
+   left: 38px;
+   background-color: var(--icon);
+   transform: rotate(-45deg);
 }
