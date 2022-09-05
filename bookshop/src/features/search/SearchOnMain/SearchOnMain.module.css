@@ -139,10 +139,6 @@
    .form {
       margin-bottom: 25px;
    }
-   .input {
-      max-width: 100%;
-      padding: 12px 0;
-   }
    .button {
       right: 14px;
       top: 18px;
@@ -151,13 +147,16 @@
 
 @media (max-width: 568px) {
    .form {
-      margin-bottom: 25px;
+      margin: 0 0 25px 0;
    }
+
    .input {
-      padding: 12px 0;
+      max-width: 294px;
+      width: 100%;
    }
+
    .button {
-      right: 34px;
+      right: 104px;
       top: 18px;
    }
 }
