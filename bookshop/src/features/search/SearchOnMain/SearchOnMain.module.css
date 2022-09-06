@@ -151,12 +151,12 @@
    }
 
    .input {
-      max-width: 294px;
+      max-width: 342px;
       width: 100%;
    }
 
    .button {
-      right: 104px;
+      right: 14px;
       top: 18px;
    }
 }
