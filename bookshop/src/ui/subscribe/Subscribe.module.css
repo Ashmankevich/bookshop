@@ -1,23 +1,21 @@
 .block {
    background-color: var(--first-item);
-   padding: 40px 80px 0 80px;
+   padding: 56px 64px;
+   margin-bottom: 72px;
 }
 
 .form {
    display: flex;
-   margin-bottom: 60px;
 }
 
 .input {
+   flex-basis: 845px;
    display: block;
-   max-width: 766px;
-   width: 100%;
    font-size: 16px;
    line-height: 32px;
    padding: 12px 20px;
    outline: none;
    border: 1px solid var(--border);
-   margin-bottom: 60px;
 }
 
 .input:focus {
@@ -28,7 +26,7 @@
    font-size: 40px;
    color: #313037;
    text-transform: uppercase;
-   margin-bottom: 5px;
+   margin: 0 0 5px 0;
    padding: 0;
 }
 
@@ -41,9 +39,9 @@
 }
 
 .button {
-   height: 57px;
-   padding: 0 40px;
+   text-align: center;
    text-transform: uppercase;
+   padding: 0 40px;
 }
 
 @media (max-width: 568px) {
@@ -53,10 +51,11 @@
    }
    .button {
       margin: 0;
+      padding-top: 16px;
+      padding-bottom: 16px;
    }
    .input {
-      max-width: 292px;
-      width: 100%;
+      flex-basis: 56px;
       margin-bottom: 24px;
    }
    .title {
