@@ -2,7 +2,6 @@
    display: flex;
    flex-direction: column;
    justify-content: center;
-   align-items: center;
    max-width: 480px;
    width: 100%;
    border: 1px solid #e7e7e7;
@@ -42,7 +41,7 @@
 }
 
 .input {
-   display: block;
+   flex-basis: 100%;
    font-size: 16px;
    line-height: 32px;
    padding: 12px 20px;
@@ -56,6 +55,8 @@
 }
 
 .label {
+   display: flex;
+   flex-direction: column;
    font-size: 16px;
    line-height: 32px;
    font-weight: 700;

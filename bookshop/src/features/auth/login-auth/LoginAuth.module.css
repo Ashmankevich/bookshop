@@ -7,10 +7,11 @@
    content: " ";
    display: block;
    border-bottom: 2px solid var(--primary-title);
-   width: 239px;
+   max-width: 220px;
+   width: 100%;
    position: absolute;
    top: 17.2%;
-   left: 27.35%;
+   left: 29.2%;
 }
 
 .containerText {

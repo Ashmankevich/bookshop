@@ -1,12 +1,13 @@
 .form {
+   display: flex;
    position: relative;
-   max-width: 650px;
+   max-width: 542px;
    width: 100%;
-   margin-left: 100px;
+   margin-left: 42px;
 }
 
 .input {
-   display: block;
+   flex-basis: 100%;
    font-size: 16px;
    line-height: 32px;
    padding: 12px 20px;
@@ -27,7 +28,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   right: 125px;
+   right: 40px;
    top: 18px;
    background-color: #313037;
    padding: 0;

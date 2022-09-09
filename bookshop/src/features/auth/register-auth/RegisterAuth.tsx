@@ -31,8 +31,12 @@ export const RegisterAuth = () => {
   };
 
   return (
-    <div className={style.wrapper}>
-      <FormAuth title="Sign Up" handleClick={handleRegister} />
+    <>
+      <FormAuth
+        className={style.container}
+        title="Sign Up"
+        handleClick={handleRegister}
+      />
       <div className={style.containerText}>
         {isSignUpError ? (
           <p className={style.text}>
@@ -42,6 +46,6 @@ export const RegisterAuth = () => {
           ""
         )}
       </div>
-    </div>
+    </>
   );
 };
