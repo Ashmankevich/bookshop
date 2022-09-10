@@ -30,8 +30,12 @@ export const LoginAuth = () => {
   };
 
   return (
-    <div className={style.wrapper}>
-      <FormAuth title="Sign In" handleClick={handleLogin} />
+    <>
+      <FormAuth
+        className={style.container}
+        title="Sign In"
+        handleClick={handleLogin}
+      />
       <div className={style.containerText}>
         {isSignInError ? (
           <p className={style.text}>
@@ -41,6 +45,6 @@ export const LoginAuth = () => {
           " "
         )}
       </div>
-    </div>
+    </>
   );
 };

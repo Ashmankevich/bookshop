@@ -1,9 +1,9 @@
-.wrapper {
+.container {
    display: block;
    position: relative;
 }
 
-.wrapper:after {
+.container:after {
    content: " ";
    display: block;
    border-bottom: 2px solid var(--primary-title);
@@ -11,7 +11,7 @@
    width: 100%;
    position: absolute;
    top: 17.2%;
-   left: 29.2%;
+   left: 5%;
 }
 
 .containerText {
@@ -28,5 +28,9 @@
    .containerText {
       top: 72%;
       left: 5%;
+   }
+   .container::after {
+      max-width: 120px;
+      top: 18.5%;
    }
 }

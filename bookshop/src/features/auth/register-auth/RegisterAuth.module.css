@@ -29,4 +29,9 @@
       top: 72%;
       left: 5%;
    }
+   .container::after {
+      max-width: 120px;
+      top: 18.5%;
+      right: 9%;
+   }
 }
