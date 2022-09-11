@@ -18,17 +18,10 @@
 
 @media (max-width: 568px) {
    .wrapper {
-      flex-direction: column;
       margin-top: 30px;
    }
    .text {
       font-size: 12px;
       padding: 0;
-   }
-   .text:first-child {
-      padding-top: 20px;
-   }
-   .text:last-child {
-      padding-bottom: 20px;
    }
 }

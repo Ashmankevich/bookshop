@@ -82,3 +82,22 @@
 .removeBtn svg:active {
    fill: #fff;
 }
+
+@media (max-width: 750px) {
+   .link {
+      flex-direction: column;
+   }
+   .removeBtn {
+      right: 25px;
+      top: 100px;
+   }
+   .pic {
+      margin-bottom: 50px;
+   }
+   .subtitle {
+      margin-bottom: 50px;
+   }
+   .price {
+      margin-bottom: 0;
+   }
+}
