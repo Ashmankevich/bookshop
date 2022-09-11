@@ -15,6 +15,7 @@ export const Spinner: React.FC<SpinnerProps> = () => {
         display: "flex",
         justifyContent: "center",
         textAlign: "center",
+        marginTop: "200px",
       }}
       wrapperClass=""
       visible={true}

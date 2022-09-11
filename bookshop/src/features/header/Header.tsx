@@ -9,8 +9,10 @@ export const Header: React.FC = () => {
     <header className={style.wrapper}>
       <Logo />
       <SearchOnMain />
-      <Navigation />
-      <Toggle />
+      <div className={style.group}>
+        <Navigation />
+        <Toggle />
+      </div>
     </header>
   );
 };
