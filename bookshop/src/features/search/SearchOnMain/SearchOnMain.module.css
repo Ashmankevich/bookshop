@@ -3,7 +3,6 @@
    position: relative;
    max-width: 542px;
    width: 100%;
-   margin-left: 42px;
 }
 
 .input {
@@ -152,9 +151,5 @@
    .button {
       right: 14px;
       top: 18px;
-   }
-   .row {
-      max-width: 360px;
-      left: 0;
    }
 }

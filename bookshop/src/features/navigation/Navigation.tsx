@@ -5,7 +5,9 @@ import { useAppSelector } from "../../store/hooks";
 import { getCartInfo, getFav } from "../../store/selectors";
 import style from "./Navigation.module.css";
 
-type NavProps = {};
+type NavProps = {
+  className?: string;
+};
 
 export const Navigation: React.FC<NavProps> = () => {
   const { cart } = useAppSelector(getCartInfo);

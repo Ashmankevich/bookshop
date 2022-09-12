@@ -7,7 +7,9 @@ import { SearchBooksApi } from "../../../store/types";
 import OutsideClickHandler from "react-outside-click-handler";
 import style from "./SearchOnMain.module.css";
 
-type SearchProps = {};
+type SearchProps = {
+  className?: string;
+};
 
 export const SearchOnMain: React.FC<SearchProps> = () => {
   const { register, handleSubmit } = useForm();
